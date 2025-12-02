@@ -4,14 +4,19 @@ import { CheckCircle, Target, Eye, Heart, Shield } from 'lucide-react'
 import Breadcrumbs from '@/components/layout/Breadcrumbs'
 import Button from '@/components/ui/Button'
 import Link from 'next/link'
+import JsonLd, { generateFAQSchema, companyFAQs } from '@/components/seo/JsonLd'
 
 export const metadata: Metadata = {
   title: 'Company Info - Yungsun Plastic Industry',
-  description: 'Learn about Yungsun Plastic Industry - Pakistan\'s leading provider of industrial packaging machinery and solutions.',
+  description: 'Learn about Yungsun Plastic Industry - Pakistan\'s leading provider of industrial packaging machinery and solutions. 500+ satisfied clients nationwide.',
+  alternates: {
+    canonical: 'https://yungsunplastic.com/company-info/',
+  },
   openGraph: {
     title: 'About Yungsun Plastic Industry',
-    description: 'Your trusted partner for industrial packaging solutions',
+    description: 'Your trusted partner for industrial packaging solutions in Pakistan',
     images: ['/images/uploads/2023/11/H-banner-2-min.jpg'],
+    url: 'https://yungsunplastic.com/company-info/',
   },
 }
 
@@ -50,6 +55,7 @@ export default function CompanyInfoPage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <JsonLd data={generateFAQSchema(companyFAQs)} />
       {/* Page Header */}
       <section className="bg-gradient-to-b from-yellow-50 to-white py-16">
         <div className="container-width">

@@ -3,14 +3,19 @@ import ProductsHeader from '@/components/products/ProductsHeader'
 import ProductCategoryGrid from '@/components/products/ProductCategoryGrid'
 import { getCategories, getFeaturedProducts } from '@/lib/data'
 import ProductGrid from '@/components/products/ProductGrid'
+import JsonLd, { generateFAQSchema, productsFAQs } from '@/components/seo/JsonLd'
 
 export const metadata: Metadata = {
   title: 'Industrial Packaging Products | Yungsun Plastic Industry',
-  description: 'Browse our comprehensive range of industrial packaging solutions including stretch films, strapping machines, carton sealers, and more.',
+  description: 'Browse our comprehensive range of industrial packaging solutions including stretch films, strapping machines, carton sealers, conveyors, and plastic pallets. Best prices in Pakistan.',
+  alternates: {
+    canonical: 'https://yungsunplastic.com/products/',
+  },
   openGraph: {
     title: 'Products - Yungsun Plastic Industry',
     description: 'Complete industrial packaging solutions for your business',
     images: ['/images/uploads/2023/11/H-banner-1-min.jpg'],
+    url: 'https://yungsunplastic.com/products/',
   },
 }
 
@@ -24,6 +29,7 @@ export default function ProductsPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <JsonLd data={generateFAQSchema(productsFAQs)} />
       <ProductsHeader />
       
       {/* Categories Section */}

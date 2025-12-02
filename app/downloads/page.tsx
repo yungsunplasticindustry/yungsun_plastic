@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Download, FileText, Book, Video, File } from 'lucide-react'
+import JsonLd, { generateFAQSchema, downloadsFAQs } from '@/components/seo/JsonLd'
 
 // Force static generation
 export const dynamic = 'force-static'
@@ -9,6 +10,9 @@ export const metadata: Metadata = {
   title: 'Downloads & Resources | Yungsun Plastic Industry',
   description: 'Download product catalogs, specification sheets, installation guides, and technical resources for our packaging machinery and equipment.',
   keywords: 'downloads, product catalogs, spec sheets, installation guides, technical resources, manuals',
+  alternates: {
+    canonical: 'https://yungsunplastic.com/downloads/',
+  },
 }
 
 interface DownloadItem {
@@ -172,6 +176,7 @@ const getFileIcon = (fileType: string) => {
 export default function DownloadsPage() {
   return (
     <main className="min-h-screen bg-white">
+      <JsonLd data={generateFAQSchema(downloadsFAQs)} />
       {/* Header Section */}
       <section className="bg-gradient-to-b from-yellow-50 to-white py-16">
         <div className="container-width">

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Shield, Download, FileText, Award, CheckCircle } from 'lucide-react'
+import JsonLd, { generateFAQSchema, certificatesFAQs } from '@/components/seo/JsonLd'
 
 // Force static generation
 export const dynamic = 'force-static'
@@ -11,6 +12,9 @@ export const metadata: Metadata = {
   title: 'Certificates & Specifications | Yungsun Plastic Industry',
   description: 'View our product certificates, specification sheets, and quality standards for plastic baskets, sealing machines, and packaging equipment.',
   keywords: 'certificates, specifications, quality standards, ISO certification, product specs, plastic basket specifications',
+  alternates: {
+    canonical: 'https://yungsunplastic.com/certificates/',
+  },
 }
 
 // Certificate data structure based on asset analysis
@@ -101,6 +105,7 @@ const certificateCategories = [
 export default function CertificatesPage() {
   return (
     <main className="min-h-screen bg-white">
+      <JsonLd data={generateFAQSchema(certificatesFAQs)} />
       {/* Header Section */}
       <section className="bg-gradient-to-b from-yellow-50 to-white py-16">
         <div className="container-width">

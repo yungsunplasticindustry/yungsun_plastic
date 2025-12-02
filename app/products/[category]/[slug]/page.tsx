@@ -4,6 +4,7 @@ import Breadcrumbs from '@/components/layout/Breadcrumbs'
 import ProductGallery from '@/components/products/ProductGallery'
 import ProductInfo from '@/components/products/ProductInfo'
 import { getProducts, getCategoryBySlug } from '@/lib/data'
+import JsonLd, { generateProductSchema, generateBreadcrumbSchema } from '@/components/seo/JsonLd'
 
 type Props = {
   params: Promise<{ 
@@ -30,6 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category, slug } = await params
   const products = getProducts()
   const product = products.find(p => p.slug === slug && p.category === category)
+  const categoryData = getCategoryBySlug(category)
   
   if (!product) {
     return {
@@ -39,12 +41,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${product.name} | Industrial Packaging - Yungsun`,
-    description: product.description,
+    title: `${product.name} | ${categoryData?.name || 'Industrial Packaging'} - Yungsun`,
+    description: `${product.description} Available in Pakistan. Request a quote for best prices.`,
+    alternates: {
+      canonical: `https://yungsunplastic.com/products/${category}/${slug}/`,
+    },
     openGraph: {
       title: product.name,
       description: product.description,
-      images: product.images,
+      images: product.images.map(img => ({
+        url: img.startsWith('http') ? img : `https://yungsunplastic.com${img}`,
+        width: 400,
+        height: 400,
+        alt: product.name,
+      })),
+      url: `https://yungsunplastic.com/products/${category}/${slug}/`,
+      type: 'website',
     },
   }
 }
@@ -68,6 +80,8 @@ export default async function ProductDetailPage({ params }: Props) {
 
   return (
     <main className="min-h-screen bg-white">
+      <JsonLd data={generateProductSchema(product, category)} />
+      <JsonLd data={generateBreadcrumbSchema(breadcrumbs)} />
       <div className="container-width py-8">
         <Breadcrumbs items={breadcrumbs} />
         

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import JsonLd, { generateFAQSchema, cookieFAQs } from '@/components/seo/JsonLd'
 
 export const metadata: Metadata = {
   title: 'Cookie Policy',
@@ -7,11 +8,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://yungsunplastic.com/cookie-policy/',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function CookiePolicyPage() {
   return (
     <main className="min-h-screen bg-white">
+      <JsonLd data={generateFAQSchema(cookieFAQs)} />
       <div className="container-width py-16">
         <div className="mx-auto max-w-4xl prose prose-zinc">
           <h1 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-8">
