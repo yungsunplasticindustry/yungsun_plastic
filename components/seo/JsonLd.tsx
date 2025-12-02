@@ -18,8 +18,8 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Yungsun Plastic Industry",
-  "url": "https://Yungsunplastic.com",
-  "logo": "https://Yungsunplastic.com/images/uploads/2023/11/yungsunplasticindustry-logo-2.png",
+  "url": "https://yungsunplastic.com",
+  "logo": "https://yungsunplastic.com/images/uploads/2023/11/yungsunplasticindustry-logo-2.png",
   "description": "Pakistan's leading provider of industrial packaging machinery and equipment",
   "address": {
     "@type": "PostalAddress",
@@ -30,14 +30,14 @@ export const organizationSchema = {
     "@type": "ContactPoint",
     "telephone": "+92-300-1234567",
     "contactType": "sales",
-    "email": "info@Yungsunplastic.com",
+    "email": "info@yungsunplastic.com",
     "areaServed": "PK",
     "availableLanguage": ["en", "ur"]
   },
   "sameAs": [
-    "https://www.facebook.com/Yungsunplastic",
-    "https://www.linkedin.com/company/Yungsunplastic",
-    "https://www.youtube.com/@Yungsunplastic"
+    "https://www.facebook.com/yungsunplastic",
+    "https://www.linkedin.com/company/yungsunplastic",
+    "https://www.youtube.com/@yungsunplastic"
   ]
 }
 
@@ -69,7 +69,7 @@ export function generateProductSchema(product: any, category: any) {
 
 // BreadcrumbList Schema Generator
 export function generateBreadcrumbSchema(items: Array<{ label: string; href?: string }>) {
-  const baseUrl = "https://Yungsunplastic.com"
+  const baseUrl = "https://yungsunplastic.com"
   
   return {
     "@context": "https://schema.org",
@@ -80,5 +80,63 @@ export function generateBreadcrumbSchema(items: Array<{ label: string; href?: st
       "name": item.label,
       "item": item.href ? `${baseUrl}${item.href}` : undefined
     }))
+  }
+}
+
+// LocalBusiness Schema for better local SEO
+export const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://yungsunplastic.com/#localbusiness",
+  "name": "Yungsun Plastic Industry",
+  "image": "https://yungsunplastic.com/images/uploads/2023/11/yungsunplasticindustry-logo-2.png",
+  "url": "https://yungsunplastic.com",
+  "telephone": "+92-300-1234567",
+  "email": "info@yungsunplastic.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Industrial Area",
+    "addressLocality": "Lahore",
+    "addressRegion": "Punjab",
+    "postalCode": "54000",
+    "addressCountry": "PK"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 31.5204,
+    "longitude": 74.3587
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "14:00"
+    }
+  ],
+  "priceRange": "$$",
+  "currenciesAccepted": "PKR",
+  "paymentAccepted": "Cash, Bank Transfer"
+}
+
+// WebSite Schema for site-wide search
+export const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Yungsun Plastic Industry",
+  "url": "https://yungsunplastic.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://yungsunplastic.com/products?search={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
   }
 }

@@ -40,7 +40,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="mb-4 text-sm text-zinc-400">
-              ONE SOURCE OF COMPLETE PACKAGING, FILLING & LABELING SOLUTION
+              ONE SOURCE OF COMPLETE PACKAGING SOLUTION
             </p>
             <div className="space-y-3 text-sm">
               <a href="mailto:info@Yungsunplastic.com" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
@@ -134,9 +134,9 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-zinc-400">
             <p>&copy; {currentYear} Yungsun Plastic Industry. All rights reserved.</p>
             <div className="flex gap-4 mt-4 md:mt-0">
-              <Link href="#" className="hover:text-yellow-400 transition-colors">Privacy Policy</Link>
-              <Link href="#" className="hover:text-yellow-400 transition-colors">Terms & Conditions</Link>
-              <Link href="#" className="hover:text-yellow-400 transition-colors">Cookie Policy</Link>
+              <Link href="/privacy-policy" className="hover:text-yellow-400 transition-colors">Privacy Policy</Link>
+              <Link href="/terms-and-conditions" className="hover:text-yellow-400 transition-colors">Terms & Conditions</Link>
+              <Link href="/cookie-policy" className="hover:text-yellow-400 transition-colors">Cookie Policy</Link>
             </div>
           </div>
         </div>
