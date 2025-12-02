@@ -1,0 +1,93 @@
+[
+  {
+    "id": "102",
+    "name": "Air Bag",
+    "slug": "air-bag",
+    "description": "Industrial air bags for safe packaging and transport protection",
+    "image": "/images/uploads/2023/11/Air-Bag-600x600-1.jpg"
+  },
+  {
+    "id": "103",
+    "name": "Carton Sealer Machine",
+    "slug": "carton-sealer-machine",
+    "description": "Automatic and semi-automatic carton sealing machines for efficient packaging",
+    "image": "/images/uploads/2023/11/RP-MA-Mini-Automatic-Carton-Sealer-400x400-1.jpg"
+  },
+  {
+    "id": "104",
+    "name": "Conveyor",
+    "slug": "conveyor",
+    "description": "Industrial conveyor systems for material handling and production lines",
+    "image": "/images/uploads/2023/11/Roller-Conveyors-400x400-1.jpg"
+  },
+  {
+    "id": "105",
+    "name": "Liquid Machine",
+    "slug": "liquid-machine",
+    "description": "Liquid packaging machines for various applications",
+    "image": "/images/uploads/2023/11/RP-1000-Automatic-Liquid-Packaging-Machine-400x400-1.jpg"
+  },
+  {
+    "id": "106",
+    "name": "Packing Tape",
+    "slug": "packing-tape",
+    "description": "High-quality packing tapes for secure sealing",
+    "image": "/images/uploads/2023/11/Royal-Pack-Tape-400x400-1.jpg"
+  },
+  {
+    "id": "107",
+    "name": "Pallete Wrapping Machine",
+    "slug": "pallete-wrapping-machine",
+    "description": "Automated pallet wrapping machines for efficient warehouse operations",
+    "image": "/images/uploads/2023/11/Model-RPZ28-400x400-1.jpg"
+  },
+  {
+    "id": "108",
+    "name": "Plastic Baskets",
+    "slug": "plastic-baskets",
+    "description": "Durable plastic baskets for storage and transportation",
+    "image": "/images/uploads/2023/11/1-SPECIFICATION-SHEET-OF-PLASTIC-BASKETSK1-400x400-1.jpg"
+  },
+  {
+    "id": "109",
+    "name": "Plastic Palletes",
+    "slug": "plastic-palletes",
+    "description": "Heavy-duty plastic pallets for industrial use",
+    "image": "/images/uploads/2023/11/11504S-400x400-1.jpg"
+  },
+  {
+    "id": "110",
+    "name": "POF Shrink",
+    "slug": "pof-shrink",
+    "description": "POF shrink film and wrapping solutions",
+    "image": "/images/uploads/2023/11/5040B-Shrink-wrapper-machine-400x400-1.jpg"
+  },
+  {
+    "id": "111",
+    "name": "PP Strap Roll",
+    "slug": "pp-strap-roll",
+    "description": "Polypropylene strapping rolls for secure bundling",
+    "image": "/images/uploads/2023/11/PP-Strap-Roll-400x400-1.jpg"
+  },
+  {
+    "id": "112",
+    "name": "Shrink Turner Sealer Machine",
+    "slug": "shrink-turner-sealer-machine",
+    "description": "Shrink tunnel and sealing machines for packaging",
+    "image": "/images/uploads/2023/11/L-Bar-Shrink-Wrapping-Machine-400x400-1.jpg"
+  },
+  {
+    "id": "113",
+    "name": "Strapping Machine",
+    "slug": "strapping-machine",
+    "description": "Automatic strapping machines for heavy-duty applications",
+    "image": "/images/uploads/2023/11/SP-1-400x400-1.jpg"
+  },
+  {
+    "id": "114",
+    "name": "Stretch Film",
+    "slug": "stretch-film",
+    "description": "Premium stretch film for pallet wrapping and protection",
+    "image": "/images/uploads/2023/11/Stretch-Film-Handy-Rolls-400x400-1.jpg"
+  }
+]

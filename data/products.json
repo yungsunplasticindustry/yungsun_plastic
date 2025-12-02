@@ -1,0 +1,344 @@
+[
+  {
+    "id": "p-001",
+    "name": "Air Bag - Standard",
+    "slug": "air-bag-standard",
+    "category": "air-bag",
+    "categoryId": "102",
+    "description": "High-quality air bags for protecting products during shipping and transportation. Provides cushioning and shock absorption.",
+    "images": [
+      "/images/uploads/2023/11/Air-Bag-600x600-1.jpg",
+      "/images/uploads/2023/11/Air-Bag3-600x600-3.jpg",
+      "/images/uploads/2023/11/Air-Bag-khajoo-bahi-600x600-1.jpg"
+    ],
+    "featured": true,
+    "specifications": {
+      "Material": "PE Film",
+      "Type": "Inflatable",
+      "Application": "Product Protection"
+    }
+  },
+  {
+    "id": "p-002",
+    "name": "RP-MA Mini Automatic Carton Sealer",
+    "slug": "rp-ma-mini-automatic-carton-sealer",
+    "category": "carton-sealer-machine",
+    "categoryId": "103",
+    "description": "Compact automatic carton sealing machine ideal for small to medium production lines. Easy to operate and maintain.",
+    "images": [
+      "/images/uploads/2023/11/RP-MA-Mini-Automatic-Carton-Sealer-400x400-1.jpg"
+    ],
+    "featured": true,
+    "specifications": {
+      "Type": "Automatic",
+      "Power": "220V",
+      "Sealing Speed": "20 cartons/min"
+    }
+  },
+  {
+    "id": "p-003",
+    "name": "RP-1D Automatic Carton Sealer",
+    "slug": "rp-1d-automatic-carton-sealer",
+    "category": "carton-sealer-machine",
+    "categoryId": "103",
+    "description": "High-performance automatic carton sealing machine with advanced features for industrial packaging operations.",
+    "images": [
+      "/images/uploads/2023/11/RP-1D-Automatic-Carton-Sealer-400x400-1.jpg"
+    ],
+    "featured": false,
+    "specifications": {
+      "Type": "Fully Automatic",
+      "Power": "220V",
+      "Capacity": "High Volume"
+    }
+  },
+  {
+    "id": "p-004",
+    "name": "RP-3A Automatic Carton Sealer",
+    "slug": "rp-3a-automatic-carton-sealer",
+    "category": "carton-sealer-machine",
+    "categoryId": "103",
+    "description": "Premium automatic carton sealer with top and bottom sealing capabilities.",
+    "images": [
+      "/images/uploads/2023/11/RP-3A-Automatic-Carton-Sealer-400x400-1.jpg"
+    ],
+    "featured": false,
+    "specifications": {
+      "Type": "Automatic",
+      "Sealing Method": "Top & Bottom",
+      "Application": "Industrial"
+    }
+  },
+  {
+    "id": "p-005",
+    "name": "Roller Conveyor System",
+    "slug": "roller-conveyor-system",
+    "category": "conveyor",
+    "categoryId": "104",
+    "description": "Heavy-duty roller conveyor for material handling in warehouses and production facilities.",
+    "images": [
+      "/images/uploads/2023/11/Roller-Conveyors-400x400-1.jpg"
+    ],
+    "featured": false,
+    "specifications": {
+      "Type": "Roller",
+      "Load Capacity": "Heavy Duty",
+      "Material": "Steel"
+    }
+  },
+  {
+    "id": "p-006",
+    "name": "RP-1000 Automatic Liquid Packaging Machine",
+    "slug": "rp-1000-automatic-liquid-packaging-machine",
+    "category": "liquid-machine",
+    "categoryId": "105",
+    "description": "Advanced liquid packaging machine for automatic filling and sealing operations.",
+    "images": [
+      "/images/uploads/2023/11/RP-1000-Automatic-Liquid-Packaging-Machine-400x400-1.jpg"
+    ],
+    "featured": true,
+    "specifications": {
+      "Type": "Automatic",
+      "Capacity": "1000ml",
+      "Application": "Liquids & Pastes"
+    }
+  },
+  {
+    "id": "p-007",
+    "name": "Royal Pack Packing Tape",
+    "slug": "royal-pack-packing-tape",
+    "category": "packing-tape",
+    "categoryId": "106",
+    "description": "Premium quality packing tape with strong adhesive for secure sealing.",
+    "images": [
+      "/images/uploads/2023/11/Royal-Pack-Tape-400x400-1.jpg"
+    ],
+    "featured": true,
+    "specifications": {
+      "Width": "48mm",
+      "Length": "100m",
+      "Type": "BOPP"
+    }
+  },
+  {
+    "id": "p-008",
+    "name": "Masking Tape",
+    "slug": "masking-tape",
+    "category": "packing-tape",
+    "categoryId": "106",
+    "description": "High-quality masking tape for various applications.",
+    "images": [
+      "/images/uploads/2023/11/Masking-Tape-400x400-1.jpg"
+    ],
+    "featured": false,
+    "specifications": {
+      "Type": "Masking",
+      "Application": "General Purpose"
+    }
+  },
+  {
+    "id": "p-009",
+    "name": "Model RPZ28 Pallet Wrapping Machine",
+    "slug": "model-rpz28-pallet-wrapping-machine",
+    "category": "pallete-wrapping-machine",
+    "categoryId": "107",
+    "description": "Semi-automatic pallet wrapping machine for efficient warehouse operations.",
+    "images": [
+      "/images/uploads/2023/11/Model-RPZ28-400x400-1.jpg"
+    ],
+    "featured": true,
+    "specifications": {
+      "Model": "RPZ28",
+      "Type": "Semi-Automatic",
+      "Turntable": "Rotary"
+    }
+  },
+  {
+    "id": "p-010",
+    "name": "Plastic Basket K1",
+    "slug": "plastic-basket-k1",
+    "category": "plastic-baskets",
+    "categoryId": "108",
+    "description": "Durable plastic basket for storage and transportation.",
+    "images": [
+      "/images/uploads/2023/11/1-SPECIFICATION-SHEET-OF-PLASTIC-BASKETSK1-400x400-1.jpg"
+    ],
+    "featured": false,
+    "specifications": {
+      "Model": "K1",
+      "Material": "HDPE",
+      "Capacity": "Standard"
+    }
+  },
+  {
+    "id": "p-011",
+    "name": "Plastic Basket K2",
+    "slug": "plastic-basket-k2",
+    "category": "plastic-baskets",
+    "categoryId": "108",
+    "description": "Heavy-duty plastic basket for industrial applications.",
+    "images": [
+      "/images/uploads/2023/11/2-SPECIFICATION-SHEET-OF-PLASTIC-BASKETSK2-600x600-1.jpg"
+    ],
+    "featured": false,
+    "specifications": {
+      "Model": "K2",
+      "Material": "HDPE",
+      "Load Capacity": "Heavy Duty"
+    }
+  },
+  {
+    "id": "p-012",
+    "name": "Plastic Pallet 11504S",
+    "slug": "plastic-pallet-11504s",
+    "category": "plastic-palletes",
+    "categoryId": "109",
+    "description": "Heavy-duty plastic pallet for warehouse and logistics operations.",
+    "images": [
+      "/images/uploads/2023/11/11504S-400x400-1.jpg"
+    ],
+    "featured": true,
+    "specifications": {
+      "Model": "11504S",
+      "Material": "HDPE",
+      "Load Capacity": "1500kg"
+    }
+  },
+  {
+    "id": "p-013",
+    "name": "5040B Shrink Wrapper Machine",
+    "slug": "5040b-shrink-wrapper-machine",
+    "category": "pof-shrink",
+    "categoryId": "110",
+    "description": "Advanced POF shrink wrapping machine for product packaging.",
+    "images": [
+      "/images/uploads/2023/11/5040B-Shrink-wrapper-machine-400x400-1.jpg"
+    ],
+    "featured": false,
+    "specifications": {
+      "Model": "5040B",
+      "Type": "Shrink Wrapper",
+      "Power": "Industrial"
+    }
+  },
+  {
+    "id": "p-014",
+    "name": "PP Strap Roll - Standard",
+    "slug": "pp-strap-roll-standard",
+    "category": "pp-strap-roll",
+    "categoryId": "111",
+    "description": "High-quality polypropylene strapping roll for bundling and securing packages.",
+    "images": [
+      "/images/uploads/2023/11/PP-Strap-Roll-400x400-1.jpg",
+      "/images/uploads/2023/11/PP-Strap-Roll-1-400x400-1.jpg"
+    ],
+    "featured": true,
+    "specifications": {
+      "Material": "Polypropylene",
+      "Width": "12mm-19mm",
+      "Tensile Strength": "High"
+    }
+  },
+  {
+    "id": "p-015",
+    "name": "PET Strap Roll",
+    "slug": "pet-strap-roll",
+    "category": "pp-strap-roll",
+    "categoryId": "111",
+    "description": "Premium PET strapping for heavy-duty applications.",
+    "images": [
+      "/images/uploads/2023/11/PET-Strap-400x400-1.jpg"
+    ],
+    "featured": false,
+    "specifications": {
+      "Material": "PET",
+      "Application": "Heavy Duty",
+      "Strength": "Extra High"
+    }
+  },
+  {
+    "id": "p-016",
+    "name": "L-Bar Shrink Wrapping Machine",
+    "slug": "l-bar-shrink-wrapping-machine",
+    "category": "shrink-turner-sealer-machine",
+    "categoryId": "112",
+    "description": "L-bar sealer with shrink tunnel for complete packaging solution.",
+    "images": [
+      "/images/uploads/2023/11/L-Bar-Shrink-Wrapping-Machine-400x400-1.jpg"
+    ],
+    "featured": true,
+    "specifications": {
+      "Type": "L-Bar Sealer",
+      "Application": "Shrink Wrapping",
+      "Power": "220V"
+    }
+  },
+  {
+    "id": "p-017",
+    "name": "SP-1 Strapping Machine",
+    "slug": "sp-1-strapping-machine",
+    "category": "strapping-machine",
+    "categoryId": "113",
+    "description": "Semi-automatic strapping machine for efficient bundling operations.",
+    "images": [
+      "/images/uploads/2023/11/SP-1-400x400-1.jpg"
+    ],
+    "featured": false,
+    "specifications": {
+      "Model": "SP-1",
+      "Type": "Semi-Automatic",
+      "Strap Width": "9-15mm"
+    }
+  },
+  {
+    "id": "p-018",
+    "name": "SP-4 Strapping Machine",
+    "slug": "sp-4-strapping-machine",
+    "category": "strapping-machine",
+    "categoryId": "113",
+    "description": "Heavy-duty automatic strapping machine.",
+    "images": [
+      "/images/uploads/2023/11/SP-4-400x400-1.jpg"
+    ],
+    "featured": false,
+    "specifications": {
+      "Model": "SP-4",
+      "Type": "Automatic",
+      "Application": "Industrial"
+    }
+  },
+  {
+    "id": "p-019",
+    "name": "Stretch Film - Handy Rolls",
+    "slug": "stretch-film-handy-rolls",
+    "category": "stretch-film",
+    "categoryId": "114",
+    "description": "Manual stretch film rolls for hand wrapping applications.",
+    "images": [
+      "/images/uploads/2023/11/Stretch-Film-Handy-Rolls-400x400-1.jpg"
+    ],
+    "featured": true,
+    "specifications": {
+      "Type": "Hand Roll",
+      "Width": "500mm",
+      "Thickness": "17-23 micron"
+    }
+  },
+  {
+    "id": "p-020",
+    "name": "Stretch Film - Machine Rolls",
+    "slug": "stretch-film-machine-rolls",
+    "category": "stretch-film",
+    "categoryId": "114",
+    "description": "Machine-grade stretch film for automatic wrapping machines.",
+    "images": [
+      "/images/uploads/2023/11/Stretch-Film-Machine-Rolls-400x400-1.jpg"
+    ],
+    "featured": true,
+    "specifications": {
+      "Type": "Machine Roll",
+      "Width": "500mm",
+      "Application": "Automatic Wrapping"
+    }
+  }
+]

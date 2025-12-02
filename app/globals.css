@@ -3,24 +3,56 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #fbbf24; /* Yellow-400 */
+  --primary-dark: #f59e0b; /* Yellow-500 */
+  --primary-light: #fde047; /* Yellow-300 */
+  --secondary: #18181b; /* Zinc-900 */
+  --accent: #3b82f6; /* Blue-500 */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  --color-secondary: var(--secondary);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Container utility */
+.container-width {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+/* Section spacing utility */
+.section-padding {
+  @apply py-12 sm:py-16 lg:py-20;
+}
+
+/* Marquee animation for tagline strip */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+  width: max-content;
 }
