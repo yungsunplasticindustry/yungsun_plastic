@@ -21,13 +21,6 @@
     "image": "/images/uploads/2023/11/Roller-Conveyors-400x400-1.jpg"
   },
   {
-    "id": "105",
-    "name": "Liquid Machine",
-    "slug": "liquid-machine",
-    "description": "Liquid packaging machines for various applications",
-    "image": "/images/uploads/2023/11/RP-1000-Automatic-Liquid-Packaging-Machine-400x400-1.jpg"
-  },
-  {
     "id": "106",
     "name": "Packing Tape",
     "slug": "packing-tape",
@@ -57,9 +50,9 @@
   },
   {
     "id": "110",
-    "name": "POF Shrink",
+    "name": "POF Shrink / PE Machine",
     "slug": "pof-shrink",
-    "description": "POF shrink film and wrapping solutions",
+    "description": "POF shrink film, PE machines, and wrapping solutions",
     "image": "/images/uploads/2023/11/5040B-Shrink-wrapper-machine-400x400-1.jpg"
   },
   {

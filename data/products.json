@@ -87,23 +87,6 @@
     }
   },
   {
-    "id": "p-006",
-    "name": "RP-1000 Automatic Liquid Packaging Machine",
-    "slug": "rp-1000-automatic-liquid-packaging-machine",
-    "category": "liquid-machine",
-    "categoryId": "105",
-    "description": "Advanced liquid packaging machine for automatic filling and sealing operations.",
-    "images": [
-      "/images/uploads/2023/11/RP-1000-Automatic-Liquid-Packaging-Machine-400x400-1.jpg"
-    ],
-    "featured": true,
-    "specifications": {
-      "Type": "Automatic",
-      "Capacity": "1000ml",
-      "Application": "Liquids & Pastes"
-    }
-  },
-  {
     "id": "p-007",
     "name": "Royal Pack Packing Tape",
     "slug": "royal-pack-packing-tape",
@@ -305,6 +288,40 @@
       "Model": "SP-4",
       "Type": "Automatic",
       "Application": "Industrial"
+    }
+  },
+  {
+    "id": "p-021",
+    "name": "Fully Automatic Strapping Machine",
+    "slug": "fully-automatic-strapping-machine",
+    "category": "strapping-machine",
+    "categoryId": "113",
+    "description": "High-speed fully automatic strapping machine for continuous production lines. Features automatic strap feeding, tensioning, and sealing.",
+    "images": [
+      "/images/uploads/2023/11/SP-4-400x400-1.jpg"
+    ],
+    "featured": true,
+    "specifications": {
+      "Type": "Fully Automatic",
+      "Speed": "High Speed",
+      "Application": "Production Lines"
+    }
+  },
+  {
+    "id": "p-022",
+    "name": "Pneumatic Strapping Machine",
+    "slug": "pneumatic-strapping-machine",
+    "category": "strapping-machine",
+    "categoryId": "113",
+    "description": "Pneumatic-powered strapping machine for heavy-duty industrial applications. Air-powered tensioning provides consistent strap tension.",
+    "images": [
+      "/images/uploads/2023/11/SP-1-400x400-1.jpg"
+    ],
+    "featured": true,
+    "specifications": {
+      "Type": "Pneumatic",
+      "Power": "Air-Powered",
+      "Application": "Heavy Duty Industrial"
     }
   },
   {
