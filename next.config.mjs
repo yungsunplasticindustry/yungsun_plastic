@@ -11,11 +11,6 @@ const nextConfig = {
   // Ensure trailing slashes for better static hosting
   trailingSlash: true,
   
-  // Skip ESLint during builds if needed
-  eslint: {
-    ignoreDuringBuilds: false,
-  },
-  
   // Skip TypeScript errors during builds if needed
   typescript: {
     ignoreBuildErrors: false,
@@ -23,7 +18,7 @@ const nextConfig = {
   
   // Environment variables (can be added as needed)
   env: {
-    NEXT_PUBLIC_BASE_URL: process.env.NEXT_PUBLIC_BASE_URL || 'https://Yungsunplastic.com',
+    NEXT_PUBLIC_BASE_URL: process.env.NEXT_PUBLIC_BASE_URL || 'https://yungsunplastic.com',
   },
 }
 

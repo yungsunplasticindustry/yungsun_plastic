@@ -1,7 +1,9 @@
 'use client'
 
-import { createContext, useContext, useState, ReactNode } from 'react'
-import RequestQuoteModal from '@/components/modals/RequestQuoteModal'
+import { createContext, useContext, useState, ReactNode, lazy, Suspense } from 'react'
+
+// Lazy load the modal - it's only needed when user clicks
+const RequestQuoteModal = lazy(() => import('@/components/modals/RequestQuoteModal'))
 
 interface QuoteContextType {
   openQuoteModal: (productName?: string) => void
@@ -27,11 +29,15 @@ export function QuoteProvider({ children }: { children: ReactNode }) {
   return (
     <QuoteContext.Provider value={{ openQuoteModal, closeQuoteModal }}>
       {children}
-      <RequestQuoteModal 
-        isOpen={isOpen}
-        onClose={closeQuoteModal}
-        productName={productName}
-      />
+      {isOpen && (
+        <Suspense fallback={null}>
+          <RequestQuoteModal 
+            isOpen={isOpen}
+            onClose={closeQuoteModal}
+            productName={productName}
+          />
+        </Suspense>
+      )}
     </QuoteContext.Provider>
   )
 }

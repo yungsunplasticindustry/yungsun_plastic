@@ -3,6 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Shield, Download, FileText, Award, CheckCircle } from 'lucide-react'
 
+// Force static generation
+export const dynamic = 'force-static'
+export const revalidate = false
+
 export const metadata: Metadata = {
   title: 'Certificates & Specifications | Yungsun Plastic Industry',
   description: 'View our product certificates, specification sheets, and quality standards for plastic baskets, sealing machines, and packaging equipment.',
@@ -31,83 +35,11 @@ const certificateCategories = [
       {
         id: 'k2',
         title: 'Plastic Basket K2',
-        image: '/images/uploads/2023/11/2-SPECIFICATION-SHEET-OF-PLASTIC-BASKETSK2-400x400-1.jpg',
+        image: '/images/uploads/2023/11/2-SPECIFICATION-SHEET-OF-PLASTIC-BASKETSK2-600x600-1.jpg',
         specs: {
           model: 'K2',
           dimensions: '450x450mm',
           capacity: '25L',
-          material: 'HDPE',
-        },
-        downloadUrl: '#',
-      },
-      {
-        id: 'k3',
-        title: 'Plastic Basket K3',
-        image: '/images/uploads/2023/11/3-SPECIFICATION-SHEET-OF-PLASTIC-BASKETSK3-400x400-1.jpg',
-        specs: {
-          model: 'K3',
-          dimensions: '500x400mm',
-          capacity: '30L',
-          material: 'HDPE',
-        },
-        downloadUrl: '#',
-      },
-      {
-        id: 'k4',
-        title: 'Plastic Basket K4',
-        image: '/images/uploads/2023/11/4-SPECIFICATION-SHEET-OF-PLASTIC-BASKETSK4-400x400-1.jpg',
-        specs: {
-          model: 'K4',
-          dimensions: '550x450mm',
-          capacity: '35L',
-          material: 'HDPE',
-        },
-        downloadUrl: '#',
-      },
-      {
-        id: 'k5',
-        title: 'Plastic Basket K5',
-        image: '/images/uploads/2023/11/5-SPECIFICATION-SHEET-OF-PLASTIC-BASKETSK5-400x400-1.jpg',
-        specs: {
-          model: 'K5',
-          dimensions: '600x400mm',
-          capacity: '40L',
-          material: 'HDPE',
-        },
-        downloadUrl: '#',
-      },
-      {
-        id: 'k6',
-        title: 'Plastic Basket K6',
-        image: '/images/uploads/2023/11/6-SPECIFICATION-SHEET-OF-PLASTIC-BASKETSK6-400x400-1.jpg',
-        specs: {
-          model: 'K6',
-          dimensions: '650x450mm',
-          capacity: '45L',
-          material: 'HDPE',
-        },
-        downloadUrl: '#',
-      },
-      {
-        id: 'k7',
-        title: 'Plastic Basket K7',
-        image: '/images/uploads/2023/11/7-SPECIFICATION-SHEET-OF-PLASTIC-BASKETSK7-400x400-1.jpg',
-        specs: {
-          model: 'K7',
-          dimensions: '700x500mm',
-          capacity: '50L',
-          material: 'HDPE',
-        },
-        downloadUrl: '#',
-      },
-      {
-        id: 'k8',
-        title: 'Plastic Basket K8',
-        image: '/images/uploads/2023/11/8-SPECIFICATION-SHEET-OF-PLASTIC-BASKETSK8-400x400-1.jpg',
-        specs: {
-          model: 'K8',
-          dimensions: '750x550mm',
-          capacity: '60L',
           material: 'HDPE',
         },
         downloadUrl: '#',
@@ -122,7 +54,7 @@ const certificateCategories = [
       {
         id: 'iso-9001',
         title: 'ISO 9001:2015',
-        image: '/images/uploads/2023/11/certificate-placeholder.jpg',
+        image: '',
         specs: {
           standard: 'ISO 9001:2015',
           scope: 'Quality Management',
@@ -141,7 +73,7 @@ const certificateCategories = [
       {
         id: 'rp-ma',
         title: 'Carton Sealer RP-MA',
-        image: '/images/uploads/2023/11/carton-sealer-machine-rp-ma-mini-automatic-75x75-1.jpg',
+        image: '/images/uploads/2023/11/RP-MA-Mini-Automatic-Carton-Sealer-400x400-1.jpg',
         specs: {
           model: 'RP-MA',
           type: 'Mini Automatic',
@@ -151,12 +83,12 @@ const certificateCategories = [
         downloadUrl: '#',
       },
       {
-        id: 'strapping-101a',
-        title: 'Strapping Machine RP-101A',
-        image: '/images/uploads/2023/11/strapping-machine-rp-101a-75x75-1.jpg',
+        id: 'strapping-sp1',
+        title: 'Strapping Machine SP-1',
+        image: '/images/uploads/2023/11/SP-1-400x400-1.jpg',
         specs: {
-          model: 'RP-101A',
-          type: 'Automatic',
+          model: 'SP-1',
+          type: 'Semi-Automatic',
           strapping: 'PP/PET',
           tension: '60kg',
         },
@@ -216,7 +148,7 @@ export default function CertificatesPage() {
                   >
                     {/* Certificate Image */}
                     <div className="relative aspect-square overflow-hidden bg-zinc-50">
-                      {cert.image.includes('placeholder') ? (
+                      {!cert.image ? (
                         <div className="flex h-full items-center justify-center">
                           <Award className="h-16 w-16 text-zinc-300" />
                         </div>

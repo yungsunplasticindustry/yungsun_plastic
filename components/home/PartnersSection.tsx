@@ -1,5 +1,6 @@
 'use client'
 
+import { useMemo, memo } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 
@@ -15,10 +16,15 @@ const partners = [
   { id: 8, name: "Partner 8", logo: "🏥" }
 ]
 
-export default function PartnersSection() {
+function PartnersSection() {
+  const autoplayPlugin = useMemo(
+    () => Autoplay({ delay: 2000, stopOnInteraction: false }),
+    []
+  )
+  
   const [emblaRef] = useEmblaCarousel(
     { loop: true, dragFree: true, containScroll: 'keepSnaps' },
-    [Autoplay({ delay: 2000, stopOnInteraction: false })]
+    [autoplayPlugin]
   )
 
   return (
@@ -45,3 +51,5 @@ export default function PartnersSection() {
     </section>
   )
 }
+
+export default memo(PartnersSection)

@@ -2,20 +2,22 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState, useRef, useEffect } from 'react'
-import { Menu, X, ChevronDown, Phone } from 'lucide-react'
+import { useState, useRef, useEffect, useMemo, useCallback, memo } from 'react'
+import { Menu, X, ChevronDown } from 'lucide-react'
 import Button from '@/components/ui/Button'
 import { useScrollDirection } from '@/hooks/useScrollDirection'
 import { getCategories } from '@/lib/data'
 import { useQuote } from '@/providers/QuoteProvider'
 
-export default function Header() {
+function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false)
   const dropdownTimeoutRef = useRef<NodeJS.Timeout | null>(null)
   const { scrollDirection, isAtTop } = useScrollDirection()
   const { openQuoteModal } = useQuote()
-  const categories = getCategories()
+  
+  // Memoize categories to prevent recalculation on every render
+  const categories = useMemo(() => getCategories(), [])
 
   const navLinks = [
     { href: '/', label: 'Home' },
@@ -24,18 +26,18 @@ export default function Header() {
     { href: '/contact', label: 'Contact Us' },
   ]
 
-  const handleMouseEnterDropdown = () => {
+  const handleMouseEnterDropdown = useCallback(() => {
     if (dropdownTimeoutRef.current) {
       clearTimeout(dropdownTimeoutRef.current)
     }
     setProductsDropdownOpen(true)
-  }
+  }, [])
 
-  const handleMouseLeaveDropdown = () => {
+  const handleMouseLeaveDropdown = useCallback(() => {
     dropdownTimeoutRef.current = setTimeout(() => {
       setProductsDropdownOpen(false)
     }, 300)
-  }
+  }, [])
 
   useEffect(() => {
     return () => {
@@ -177,3 +179,6 @@ export default function Header() {
     </header>
   )
 }
+
+// Export memoized component to prevent unnecessary re-renders
+export default memo(Header)

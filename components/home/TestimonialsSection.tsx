@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback } from 'react'
+import { useCallback, useMemo, memo } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react'
@@ -40,10 +40,15 @@ const testimonials = [
   }
 ]
 
-export default function TestimonialsSection() {
+function TestimonialsSection() {
+  const autoplayPlugin = useMemo(
+    () => Autoplay({ delay: 5000, stopOnInteraction: false }),
+    []
+  )
+  
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, align: 'start' },
-    [Autoplay({ delay: 5000, stopOnInteraction: false })]
+    [autoplayPlugin]
   )
 
   const scrollPrev = useCallback(() => {
@@ -117,3 +122,5 @@ export default function TestimonialsSection() {
     </section>
   )
 }
+
+export default memo(TestimonialsSection)

@@ -10,6 +10,7 @@ interface CartItem {
 interface CartStore {
   items: CartItem[]
   isOpen: boolean
+  isHydrated: boolean
   
   // Actions
   addItem: (product: Product, quantity?: number) => void
@@ -17,6 +18,7 @@ interface CartStore {
   updateQuantity: (productId: string, quantity: number) => void
   clearCart: () => void
   toggleCart: () => void
+  setHydrated: () => void
   
   // Computed values
   getTotalItems: () => number
@@ -29,6 +31,9 @@ export const useCartStore = create<CartStore>()(
     (set, get) => ({
       items: [],
       isOpen: false,
+      isHydrated: false,
+
+      setHydrated: () => set({ isHydrated: true }),
 
       addItem: (product: Product, quantity = 1) => {
         set((state) => {
@@ -98,8 +103,21 @@ export const useCartStore = create<CartStore>()(
     }),
     {
       name: 'yunsun-cart',
-      storage: createJSONStorage(() => localStorage),
+      storage: createJSONStorage(() => {
+        // Return a no-op storage for SSR
+        if (typeof window === 'undefined') {
+          return {
+            getItem: () => null,
+            setItem: () => {},
+            removeItem: () => {},
+          }
+        }
+        return localStorage
+      }),
       partialize: (state) => ({ items: state.items }), // Only persist items, not UI state
+      onRehydrateStorage: () => (state) => {
+        state?.setHydrated()
+      },
     }
   )
 )

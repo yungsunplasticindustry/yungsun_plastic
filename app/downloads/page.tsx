@@ -1,6 +1,10 @@
 import type { Metadata } from 'next'
 import { Download, FileText, Book, Video, File } from 'lucide-react'
 
+// Force static generation
+export const dynamic = 'force-static'
+export const revalidate = false
+
 export const metadata: Metadata = {
   title: 'Downloads & Resources | Yungsun Plastic Industry',
   description: 'Download product catalogs, specification sheets, installation guides, and technical resources for our packaging machinery and equipment.',

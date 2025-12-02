@@ -3,11 +3,10 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { Loader2 } from 'lucide-react'
+import { Loader2, Mail } from 'lucide-react'
 import Button from '@/components/ui/Button'
 import { useCartStore } from '@/stores/cart'
-import { contactFormSchema, quoteRequestSchema, type ContactFormData, type QuoteRequestData } from '@/lib/validations'
-import { submitQuoteRequest } from '@/app/actions/quote'
+import { contactFormSchema, type ContactFormData } from '@/lib/validations'
 
 interface ContactFormProps {
   includeCartItems?: boolean
@@ -20,46 +19,53 @@ export default function ContactForm({ includeCartItems = false }: ContactFormPro
   const cartItems = useCartStore((state) => state.getCartItems())
   const clearCart = useCartStore((state) => state.clearCart)
   
-  const schema = includeCartItems ? quoteRequestSchema : contactFormSchema
-  
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors }
-  } = useForm<ContactFormData | QuoteRequestData>({
-    resolver: zodResolver(schema),
+  } = useForm<ContactFormData>({
+    resolver: zodResolver(contactFormSchema),
   })
 
-  const onSubmit = async (data: ContactFormData | QuoteRequestData) => {
+  const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true)
     setSubmitResult(null)
 
     try {
-      const submissionData: QuoteRequestData = {
-        ...data,
-        cartItems: includeCartItems 
-          ? cartItems.map(item => ({
-              productId: item.product.id,
-              productName: item.product.name,
-              quantity: item.quantity
-            }))
-          : []
+      // Build email body
+      let emailBody = `Name: ${data.name}\n`
+      emailBody += `Email: ${data.email}\n`
+      if (data.phone) emailBody += `Phone: ${data.phone}\n`
+      if (data.company) emailBody += `Company: ${data.company}\n`
+      emailBody += `\nMessage:\n${data.message}`
+      
+      if (includeCartItems && cartItems.length > 0) {
+        emailBody += `\n\n--- Quote Request Items ---\n`
+        cartItems.forEach(item => {
+          emailBody += `- ${item.product.name} (Qty: ${item.quantity})\n`
+        })
       }
 
-      const result = await submitQuoteRequest(submissionData)
-      setSubmitResult(result)
-
-      if (result.success) {
-        reset()
-        if (includeCartItems) {
-          clearCart()
-        }
+      // Open mailto link
+      const subject = includeCartItems ? 'Quote Request - Yungsun Plastic Industry' : 'Contact Inquiry - Yungsun Plastic Industry'
+      const mailtoUrl = `mailto:info@yungsunplastic.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`
+      
+      window.open(mailtoUrl, '_blank')
+      
+      setSubmitResult({
+        success: true,
+        message: 'Your email client has been opened. Please send the email to complete your request.'
+      })
+      
+      reset()
+      if (includeCartItems) {
+        clearCart()
       }
     } catch (error) {
       setSubmitResult({
         success: false,
-        message: 'An error occurred while submitting the form'
+        message: 'An error occurred. Please email us directly at info@yungsunplastic.com'
       })
     } finally {
       setIsSubmitting(false)

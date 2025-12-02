@@ -1,0 +1,7 @@
+# Robots.txt for Yungsun Plastic Industry
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+Sitemap: https://yungsunplastic.com/sitemap.xml

@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useState, memo, useMemo } from 'react'
 
 const CAROUSEL_IMAGES = [
   {
@@ -24,10 +24,16 @@ const CAROUSEL_IMAGES = [
   },
 ]
 
-export default function HeroCarousel() {
+function HeroCarousel() {
+  // Memoize autoplay plugin to prevent recreation on every render
+  const autoplayPlugin = useMemo(
+    () => Autoplay({ delay: 5000, stopOnInteraction: false }),
+    []
+  )
+  
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, duration: 30 },
-    [Autoplay({ delay: 5000, stopOnInteraction: false })]
+    [autoplayPlugin]
   )
   const [selectedIndex, setSelectedIndex] = useState(0)
 
@@ -93,3 +99,5 @@ export default function HeroCarousel() {
     </section>
   )
 }
+
+export default memo(HeroCarousel)
