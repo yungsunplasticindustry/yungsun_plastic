@@ -1,14 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Enable static export for full static site generation
-  output: 'export',
-  
-  // Optimize images
+  // Optimize images - use Vercel's image optimization
   images: {
-    unoptimized: true, // Required for static export
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'yungsunplastic.com',
+      },
+    ],
   },
   
-  // Ensure trailing slashes for better static hosting
+  // Ensure trailing slashes for better SEO
   trailingSlash: true,
   
   // Skip TypeScript errors during builds if needed
@@ -16,7 +18,7 @@ const nextConfig = {
     ignoreBuildErrors: false,
   },
   
-  // Environment variables (can be added as needed)
+  // Environment variables
   env: {
     NEXT_PUBLIC_BASE_URL: process.env.NEXT_PUBLIC_BASE_URL || 'https://yungsunplastic.com',
   },
