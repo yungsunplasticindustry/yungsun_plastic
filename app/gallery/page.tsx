@@ -26,25 +26,25 @@ const galleryItems = [
     id: 2,
     title: "Strapping Machine Setup",
     category: "Machinery",
-    image: "/images/uploads/2023/11/RP-Automatic-Unmanned-Strapping-Machine-400x400-1.jpg"
+    image: "/images/uploads/2023/11/SP-1-400x400-1.jpg"
   },
   {
     id: 3,
     title: "Conveyor System",
-    category: "Systems",
+    category: "Machinery",
     image: "/images/uploads/2023/11/Roller-Conveyors-400x400-1.jpg"
   },
   {
     id: 4,
     title: "Liquid Packaging Line",
-    category: "Production",
+    category: "Machinery",
     image: "/images/uploads/2023/11/RP-1000-Automatic-Liquid-Packaging-Machine-400x400-1.jpg"
   },
   {
     id: 5,
     title: "Stretch Film Application",
     category: "Materials",
-    image: "/images/uploads/2023/11/Stretch-Film-600x600-1.jpg"
+    image: "/images/uploads/2023/11/Stretch-Film-Handy-Rolls-400x400-1.jpg"
   },
   {
     id: 6,
