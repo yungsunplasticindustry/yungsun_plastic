@@ -107,7 +107,7 @@ export default function RootLayout({
         <JsonLd data={websiteSchema} />
         <QuoteProvider>
           <HeaderWrapper />
-          <main className="min-h-screen pt-20">{children}</main>
+          <main className="min-h-screen ">{children}</main>
           <Footer />
         </QuoteProvider>
         <Analytics />
