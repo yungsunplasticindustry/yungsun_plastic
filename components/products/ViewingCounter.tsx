@@ -8,7 +8,9 @@ export default function ViewingCounter() {
 
   useEffect(() => {
     // Initial random count between 10-40
-    setViewCount(Math.floor(Math.random() * 30) + 10)
+    const initialCount = Math.floor(Math.random() * 30) + 10
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setViewCount(initialCount)
 
     // Update count every 5-10 seconds
     const interval = setInterval(() => {

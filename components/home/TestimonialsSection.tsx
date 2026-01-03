@@ -45,7 +45,7 @@ function TestimonialsSection() {
     () => Autoplay({ delay: 5000, stopOnInteraction: false }),
     []
   )
-  
+
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, align: 'start' },
     [autoplayPlugin]
@@ -80,17 +80,17 @@ function TestimonialsSection() {
                     <div className="mb-4">
                       <Quote className="h-8 w-8 text-yellow-400" />
                     </div>
-                    
+
                     <div className="flex gap-1 mb-4">
                       {[...Array(testimonial.rating)].map((_, i) => (
                         <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                       ))}
                     </div>
-                    
+
                     <p className="text-zinc-600 mb-6 italic">
-                      "{testimonial.content}"
+                      &quot;{testimonial.content}&quot;
                     </p>
-                    
+
                     <div className="border-t pt-4">
                       <p className="font-semibold text-zinc-900">{testimonial.name}</p>
                       <p className="text-sm text-zinc-600">{testimonial.role}</p>

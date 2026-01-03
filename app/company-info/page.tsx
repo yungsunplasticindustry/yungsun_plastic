@@ -81,22 +81,22 @@ export default function CompanyInfoPage() {
               </h2>
               <div className="prose prose-lg text-zinc-600 space-y-4">
                 <p>
-                  Yungsun Plastic Industry is Pakistan's premier provider of industrial 
-                  packaging machinery and solutions. Our mission is to revolutionize the 
-                  packaging industry in Pakistan by providing world-class machinery and 
+                  Yungsun Plastic Industry is Pakistan&apos;s premier provider of industrial
+                  packaging machinery and solutions. Our mission is to revolutionize the
+                  packaging industry in Pakistan by providing world-class machinery and
                   unmatched service.
                 </p>
                 <p>
-                  We have successfully served over 500 clients across 
-                  various industries including pharmaceuticals, textiles, food processing, and 
-                  manufacturing. Our comprehensive product range includes everything from carton 
-                  sealers and strapping machines to complete conveyor systems and liquid packaging 
+                  We have successfully served over 500 clients across
+                  various industries including pharmaceuticals, textiles, food processing, and
+                  manufacturing. Our comprehensive product range includes everything from carton
+                  sealers and strapping machines to complete conveyor systems and liquid packaging
                   solutions.
                 </p>
                 <p>
-                  What sets us apart is not just the quality of our products, but our commitment 
-                  to understanding each client's unique needs and providing tailored solutions 
-                  that drive efficiency and growth. Our team of experts provides complete support 
+                  What sets us apart is not just the quality of our products, but our commitment
+                  to understanding each client&apos;s unique needs and providing tailored solutions
+                  that drive efficiency and growth. Our team of experts provides complete support
                   from initial consultation through installation and ongoing maintenance.
                 </p>
               </div>
@@ -124,8 +124,8 @@ export default function CompanyInfoPage() {
                 <h3 className="text-2xl font-bold text-zinc-900">Our Mission</h3>
               </div>
               <p className="text-zinc-600">
-                To provide innovative and reliable industrial packaging solutions that help 
-                our clients optimize their operations, reduce costs, and achieve sustainable 
+                To provide innovative and reliable industrial packaging solutions that help
+                our clients optimize their operations, reduce costs, and achieve sustainable
                 growth while maintaining the highest standards of quality and service.
               </p>
             </div>
@@ -135,8 +135,8 @@ export default function CompanyInfoPage() {
                 <h3 className="text-2xl font-bold text-zinc-900">Our Vision</h3>
               </div>
               <p className="text-zinc-600">
-                To be the leading packaging solutions provider in South Asia, recognized 
-                for our quality, innovation, and commitment to customer satisfaction while 
+                To be the leading packaging solutions provider in South Asia, recognized
+                for our quality, innovation, and commitment to customer satisfaction while
                 contributing to the industrial growth of our region.
               </p>
             </div>

@@ -3,7 +3,7 @@ import Button from '@/components/ui/Button'
 
 export default function SolutionsBanner() {
   return (
-    <section 
+    <section
       className="relative py-24 bg-cover bg-center bg-fixed"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/uploads/2023/11/H-banner-3-min.jpg')`
@@ -15,7 +15,7 @@ export default function SolutionsBanner() {
             Machinery Equipment Solutions Provider
           </h2>
           <p className="text-xl mb-8 text-zinc-100">
-            We are Pakistan's trusted packing machines and materials company
+            We are Pakistan&apos;s trusted packing machines and materials company
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/products">

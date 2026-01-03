@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { Loader2, Mail } from 'lucide-react'
+import { Loader2 } from 'lucide-react'
 import Button from '@/components/ui/Button'
 import { useCartStore } from '@/stores/cart'
 import { contactFormSchema, type ContactFormData } from '@/lib/validations'
@@ -15,10 +15,10 @@ interface ContactFormProps {
 export default function ContactForm({ includeCartItems = false }: ContactFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitResult, setSubmitResult] = useState<{ success: boolean; message: string } | null>(null)
-  
+
   const cartItems = useCartStore((state) => state.getCartItems())
   const clearCart = useCartStore((state) => state.clearCart)
-  
+
   const {
     register,
     handleSubmit,
@@ -39,7 +39,7 @@ export default function ContactForm({ includeCartItems = false }: ContactFormPro
       if (data.phone) emailBody += `Phone: ${data.phone}\n`
       if (data.company) emailBody += `Company: ${data.company}\n`
       emailBody += `\nMessage:\n${data.message}`
-      
+
       if (includeCartItems && cartItems.length > 0) {
         emailBody += `\n\n--- Quote Request Items ---\n`
         cartItems.forEach(item => {
@@ -50,19 +50,19 @@ export default function ContactForm({ includeCartItems = false }: ContactFormPro
       // Open mailto link
       const subject = includeCartItems ? 'Quote Request - Yungsun Plastic Industry' : 'Contact Inquiry - Yungsun Plastic Industry'
       const mailtoUrl = `mailto:info@yungsunplastic.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`
-      
+
       window.open(mailtoUrl, '_blank')
-      
+
       setSubmitResult({
         success: true,
         message: 'Your email client has been opened. Please send the email to complete your request.'
       })
-      
+
       reset()
       if (includeCartItems) {
         clearCart()
       }
-    } catch (error) {
+    } catch {
       setSubmitResult({
         success: false,
         message: 'An error occurred. Please email us directly at info@yungsunplastic.com'
@@ -79,11 +79,10 @@ export default function ContactForm({ includeCartItems = false }: ContactFormPro
       </h2>
 
       {submitResult && (
-        <div className={`mb-4 rounded-md p-4 ${
-          submitResult.success 
+        <div className={`mb-4 rounded-md p-4 ${submitResult.success
             ? 'bg-green-50 text-green-800 border border-green-200'
             : 'bg-red-50 text-red-800 border border-red-200'
-        }`}>
+          }`}>
           {submitResult.message}
         </div>
       )}
@@ -109,9 +108,8 @@ export default function ContactForm({ includeCartItems = false }: ContactFormPro
           <input
             {...register('name')}
             type="text"
-            className={`w-full rounded-md border px-4 py-2 focus:outline-none focus:ring-2 focus:ring-zinc-900 ${
-              errors.name ? 'border-red-500' : 'border-zinc-300'
-            }`}
+            className={`w-full rounded-md border px-4 py-2 focus:outline-none focus:ring-2 focus:ring-zinc-900 ${errors.name ? 'border-red-500' : 'border-zinc-300'
+              }`}
             disabled={isSubmitting}
           />
           {errors.name && (
@@ -126,9 +124,8 @@ export default function ContactForm({ includeCartItems = false }: ContactFormPro
           <input
             {...register('email')}
             type="email"
-            className={`w-full rounded-md border px-4 py-2 focus:outline-none focus:ring-2 focus:ring-zinc-900 ${
-              errors.email ? 'border-red-500' : 'border-zinc-300'
-            }`}
+            className={`w-full rounded-md border px-4 py-2 focus:outline-none focus:ring-2 focus:ring-zinc-900 ${errors.email ? 'border-red-500' : 'border-zinc-300'
+              }`}
             disabled={isSubmitting}
           />
           {errors.email && (
@@ -167,9 +164,8 @@ export default function ContactForm({ includeCartItems = false }: ContactFormPro
           <textarea
             {...register('message')}
             rows={4}
-            className={`w-full rounded-md border px-4 py-2 focus:outline-none focus:ring-2 focus:ring-zinc-900 ${
-              errors.message ? 'border-red-500' : 'border-zinc-300'
-            }`}
+            className={`w-full rounded-md border px-4 py-2 focus:outline-none focus:ring-2 focus:ring-zinc-900 ${errors.message ? 'border-red-500' : 'border-zinc-300'
+              }`}
             disabled={isSubmitting}
           />
           {errors.message && (

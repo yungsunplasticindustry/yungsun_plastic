@@ -2,6 +2,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Mail, Phone, MapPin, Clock, Facebook, Twitter, Linkedin, Youtube } from 'lucide-react'
 
+import { COMPANY_INFO } from '@/lib/constants'
+
+// ... imports remain the same
+
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
@@ -43,24 +47,25 @@ export default function Footer() {
               ONE SOURCE OF COMPLETE PACKAGING SOLUTION
             </p>
             <div className="space-y-3 text-sm">
-              <a href="mailto:info@Yungsunplastic.com" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
+              <a href={`mailto:${COMPANY_INFO.mainContact.email}`} className="flex items-center gap-2 hover:text-blue-400 transition-colors">
                 <Mail className="h-4 w-4" />
-                <span>info@Yungsunplastic.com</span>
+                <span>{COMPANY_INFO.mainContact.email}</span>
               </a>
-              <a href="tel:+923001234567" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
+              <a href={`tel:${COMPANY_INFO.mainContact.phone}`} className="flex items-center gap-2 hover:text-blue-400 transition-colors">
                 <Phone className="h-4 w-4" />
-                <span>+92 300 1234567</span>
+                <span>{COMPANY_INFO.mainContact.phone}</span>
               </a>
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
-                <span>Lahore, Pakistan</span>
+                <span>{COMPANY_INFO.locations.map(l => l.city).join(', ')} - Pakistan</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
-                <span>Mon-Sat: 9:00 AM - 6:00 PM</span>
+                <span>Mon-Sat: {COMPANY_INFO.businessHours.weekdays}</span>
               </div>
             </div>
-            
+
+
             {/* Social Media */}
             <div className="flex gap-3 mt-6">
               <Link href="#" className="w-8 h-8 bg-zinc-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">

@@ -17,20 +17,20 @@ export default function CompanyInfoSection() {
         <div className="grid gap-12 lg:grid-cols-2 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
-              Pakistan's Leading Industrial Packaging Solutions Provider
+              Pakistan&apos;s Leading Industrial Packaging Solutions Provider
             </h2>
-            
+
             <div className="prose prose-lg text-zinc-600 mb-8">
               <p>
-                Yungsun Plastic Industry is at the forefront of providing cutting-edge 
-                packaging machinery and equipment to businesses across Pakistan. 
-                Our commitment to quality, innovation, and customer satisfaction has made us 
+                Yungsun Plastic Industry is at the forefront of providing cutting-edge
+                packaging machinery and equipment to businesses across Pakistan.
+                Our commitment to quality, innovation, and customer satisfaction has made us
                 the preferred partner for companies seeking reliable packaging solutions.
               </p>
               <p className="mt-4">
-                We specialize in a comprehensive range of industrial packaging equipment, 
-                from carton sealers and strapping machines to conveyor systems and liquid 
-                packaging solutions. Every product in our catalog is carefully selected to 
+                We specialize in a comprehensive range of industrial packaging equipment,
+                from carton sealers and strapping machines to conveyor systems and liquid
+                packaging solutions. Every product in our catalog is carefully selected to
                 meet the highest standards of performance and durability.
               </p>
             </div>

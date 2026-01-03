@@ -15,16 +15,7 @@ export const metadata: Metadata = {
   },
 }
 
-interface DownloadItem {
-  id: string
-  title: string
-  description: string
-  fileType: 'pdf' | 'doc' | 'xls' | 'zip'
-  fileSize: string
-  downloadUrl: string
-  category: string
-  featured?: boolean
-}
+
 
 const downloadCategories = [
   {

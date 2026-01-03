@@ -10,28 +10,28 @@ export default function CompanyInfo() {
             <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
               Leading the Way in Industrial Packaging
             </h2>
-            
+
             <div className="space-y-4 text-zinc-600">
               <p>
-                Yungsun Plastic Industry is at the forefront of providing comprehensive 
-                packaging solutions to businesses across Pakistan and international markets. 
-                Our vision is to revolutionize the packaging industry through innovation, 
+                Yungsun Plastic Industry is at the forefront of providing comprehensive
+                packaging solutions to businesses across Pakistan and international markets.
+                Our vision is to revolutionize the packaging industry through innovation,
                 quality, and exceptional service.
               </p>
-              
+
               <p>
-                Today, we stand as Pakistan's largest packaging machinery and materials 
-                company, offering an extensive range of products from stretch films and 
-                strapping machines to advanced conveyor systems and automated packaging 
-                lines. Our commitment to excellence has earned us the trust of over 500 
+                Today, we stand as Pakistan&apos;s largest packaging machinery and materials
+                company, offering an extensive range of products from stretch films and
+                strapping machines to advanced conveyor systems and automated packaging
+                lines. Our commitment to excellence has earned us the trust of over 500
                 satisfied clients across various industries.
               </p>
-              
+
               <p>
-                We believe in building long-term partnerships with our clients by 
-                understanding their unique needs and providing tailored solutions that 
-                drive efficiency, reduce costs, and enhance productivity. Our team of 
-                experienced professionals works tirelessly to ensure that every product 
+                We believe in building long-term partnerships with our clients by
+                understanding their unique needs and providing tailored solutions that
+                drive efficiency, reduce costs, and enhance productivity. Our team of
+                experienced professionals works tirelessly to ensure that every product
                 we deliver meets the highest standards of quality and reliability.
               </p>
             </div>
@@ -69,7 +69,7 @@ export default function CompanyInfo() {
             </div>
             <div className="absolute -bottom-6 -left-6 bg-blue-600 text-white p-6 rounded-lg max-w-xs">
               <p className="font-semibold">
-                "Quality is not an act, it is a habit"
+                &quot;Quality is not an act, it is a habit&quot;
               </p>
               <p className="text-sm mt-2 text-blue-100">- Our Philosophy</p>
             </div>

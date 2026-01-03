@@ -6,8 +6,8 @@ export default function JsonLd({ data }: JsonLdProps) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ 
-        __html: JSON.stringify(data).replace(/</g, '\\u003c') 
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(data).replace(/</g, '\\u003c')
       }}
     />
   )
@@ -42,6 +42,7 @@ export const organizationSchema = {
 }
 
 // Product Schema Generator
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function generateProductSchema(product: any, category: any) {
   return {
     "@context": "https://schema.org",
@@ -70,7 +71,7 @@ export function generateProductSchema(product: any, category: any) {
 // BreadcrumbList Schema Generator
 export function generateBreadcrumbSchema(items: Array<{ label: string; href?: string }>) {
   const baseUrl = "https://yungsunplastic.com"
-  
+
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -357,7 +358,7 @@ export function generateCategoryFAQs(categoryName: string, categorySlug: string)
       }
     ]
   }
-  
+
   return categoryFAQs[categorySlug] || [
     {
       question: `What ${categoryName} products does Yungsun offer?`,

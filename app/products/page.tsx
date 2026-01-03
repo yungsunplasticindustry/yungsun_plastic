@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import ProductsHeader from '@/components/products/ProductsHeader'
 import ProductCategoryGrid from '@/components/products/ProductCategoryGrid'
-import { getCategories, getFeaturedProducts } from '@/lib/data'
+import { getFeaturedProducts } from '@/lib/data'
 import ProductGrid from '@/components/products/ProductGrid'
 import JsonLd, { generateFAQSchema, productsFAQs } from '@/components/seo/JsonLd'
 
@@ -25,13 +25,13 @@ export const revalidate = false
 
 export default function ProductsPage() {
   const featuredProducts = getFeaturedProducts()
-  const categories = getCategories()
+
 
   return (
     <div className="min-h-screen bg-white">
       <JsonLd data={generateFAQSchema(productsFAQs)} />
       <ProductsHeader />
-      
+
       {/* Categories Section */}
       <section className="py-12">
         <div className="container-width">

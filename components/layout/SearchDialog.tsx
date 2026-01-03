@@ -1,9 +1,9 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useMemo } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Search, X, Loader2 } from 'lucide-react'
+import { Search, X } from 'lucide-react'
 import { searchProducts } from '@/lib/data'
 import { useDebounce } from '@/hooks/useDebounce'
 import type { Product } from '@/types'
@@ -16,9 +16,15 @@ interface SearchDialogProps {
 
 export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
   const [query, setQuery] = useState('')
-  const [results, setResults] = useState<Product[]>([])
-  const [isSearching, setIsSearching] = useState(false)
+  // Using useMemo for synchronous search to avoid cascading renders
   const debouncedQuery = useDebounce(query, 300)
+  const results = useMemo<Product[]>(() => {
+    if (debouncedQuery.length >= 2) {
+      return searchProducts(debouncedQuery)
+    }
+    return []
+  }, [debouncedQuery])
+
   const inputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
@@ -27,20 +33,10 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
     }
   }, [isOpen])
 
-  useEffect(() => {
-    if (debouncedQuery.length >= 2) {
-      setIsSearching(true)
-      const searchResults = searchProducts(debouncedQuery)
-      setResults(searchResults)
-      setIsSearching(false)
-    } else {
-      setResults([])
-    }
-  }, [debouncedQuery])
+  // Removed redundant useEffect for search logic
 
   const handleClose = () => {
     setQuery('')
-    setResults([])
     onClose()
   }
 
@@ -49,7 +45,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto">
       {/* Backdrop */}
-      <div 
+      <div
         className="fixed inset-0 bg-black/50 backdrop-blur-sm"
         onClick={handleClose}
       />
@@ -68,9 +64,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
               onChange={(e) => setQuery(e.target.value)}
               className="flex-1 px-4 py-4 text-zinc-900 placeholder-zinc-400 focus:outline-none"
             />
-            {isSearching && (
-              <Loader2 className="mr-4 h-5 w-5 text-zinc-400 animate-spin" />
-            )}
+            {/* Removed loading indicator since search is synchronous */}
             <button
               onClick={handleClose}
               className="mr-4 p-1 rounded-md hover:bg-zinc-100"
@@ -119,7 +113,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
                 ) : (
                   <div className="py-12 text-center">
                     <p className="text-zinc-500">
-                      No products found for "{query}"
+                      No products found for &quot;{query}&quot;
                     </p>
                   </div>
                 )}

@@ -5,7 +5,6 @@ import Image from 'next/image'
 import { useState, useRef, useEffect, useMemo, useCallback, memo } from 'react'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import Button from '@/components/ui/Button'
-import { useScrollDirection } from '@/hooks/useScrollDirection'
 import { getCategories } from '@/lib/data'
 import { useQuote } from '@/providers/QuoteProvider'
 
@@ -13,9 +12,8 @@ function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false)
   const dropdownTimeoutRef = useRef<NodeJS.Timeout | null>(null)
-  const { scrollDirection, isAtTop } = useScrollDirection()
   const { openQuoteModal } = useQuote()
-  
+
   // Memoize categories to prevent recalculation on every render
   const categories = useMemo(() => getCategories(), [])
 
@@ -42,7 +40,7 @@ function Header() {
 
   return (
     <header className="w-full bg-white shadow-sm">
-        <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
@@ -69,9 +67,9 @@ function Header() {
           >
             Company Info
           </Link>
-          
+
           {/* Products Mega Menu */}
-          <div 
+          <div
             className="relative"
             onMouseEnter={handleMouseEnterDropdown}
             onMouseLeave={handleMouseLeaveDropdown}
@@ -81,11 +79,10 @@ function Header() {
               onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
             >
               Products
-              <ChevronDown className={`h-4 w-4 transition-transform ${
-                productsDropdownOpen ? 'rotate-180' : ''
-              }`} />
+              <ChevronDown className={`h-4 w-4 transition-transform ${productsDropdownOpen ? 'rotate-180' : ''
+                }`} />
             </button>
-            
+
             {productsDropdownOpen && (
               <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[600px] rounded-lg bg-white shadow-xl ring-1 ring-black/5 p-4">
                 <div className="grid grid-cols-2 gap-2">
@@ -195,9 +192,9 @@ function Header() {
             >
               Contact Us
             </Link>
-            <Button 
-              variant="primary" 
-              size="default" 
+            <Button
+              variant="primary"
+              size="default"
               className="w-full"
               onClick={() => {
                 setMobileMenuOpen(false)
