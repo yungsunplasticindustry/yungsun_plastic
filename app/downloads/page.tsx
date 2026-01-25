@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { Download, FileText, Book, Video, File } from 'lucide-react'
 import JsonLd, { generateFAQSchema, downloadsFAQs } from '@/components/seo/JsonLd'
 
@@ -278,18 +279,18 @@ export default function DownloadsPage() {
               Contact our technical team for personalized product information or custom quotations
             </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-              <a
+              <Link
                 href="/contact"
                 className="inline-flex items-center justify-center rounded-md bg-yellow-600 px-6 py-3 font-medium text-white transition-colors hover:bg-yellow-700"
               >
                 Contact Support
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/contact?quote=true"
                 className="inline-flex items-center justify-center rounded-md border border-zinc-300 bg-white px-6 py-3 font-medium text-zinc-700 transition-colors hover:bg-zinc-50"
               >
                 Request Quote
-              </a>
+              </Link>
             </div>
           </div>
         </div>
