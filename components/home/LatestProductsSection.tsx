@@ -5,18 +5,20 @@ import Button from '@/components/ui/Button'
 
 export default function LatestProductsSection() {
   const products = getFeaturedProducts()
-  // Show first 4 featured products
-  const latestProducts = products.slice(0, 4)
+  const latestProducts = products.slice(0, 8)
 
   return (
     <section className="py-16 bg-zinc-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
+          <p className="text-yellow-600 font-semibold text-sm uppercase tracking-widest mb-2">
+            Featured Products
+          </p>
           <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
             Latest Products
           </h2>
           <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
-            Discover our newest and most innovative packaging machinery
+            Discover our newest and most innovative packaging machinery and materials
           </p>
         </div>
 
@@ -33,7 +35,7 @@ export default function LatestProductsSection() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                   {product.featured && (
-                    <span className="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded">
+                    <span className="absolute top-2 right-2 bg-yellow-500 text-zinc-900 text-xs font-bold px-2 py-1 rounded">
                       HOT
                     </span>
                   )}
@@ -56,7 +58,7 @@ export default function LatestProductsSection() {
 
         <div className="text-center mt-10">
           <Link href="/products">
-            <Button size="lg">
+            <Button size="lg" className="bg-yellow-500 text-zinc-900 border-yellow-500 hover:bg-yellow-400 font-bold">
               Browse All Products
             </Button>
           </Link>

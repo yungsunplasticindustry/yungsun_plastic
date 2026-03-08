@@ -37,13 +37,13 @@ export default function HomePage() {
       <JsonLd data={generateFAQSchema(homepageFAQs)} />
       <HeroCarousel />
       <WelcomeSection />
-      <CompanyInfoSection />
       <ProductRangeSection />
       <LatestProductsSection />
       <TaglineStrip />
+      <FeaturesSection />
       <SolutionsBanner />
       <TestimonialsSection />
-      <FeaturesSection />
+      <CompanyInfoSection />
       <PartnersSection />
     </main>
   )
