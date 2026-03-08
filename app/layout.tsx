@@ -83,6 +83,11 @@ export const metadata: Metadata = {
     description: 'Industrial Packaging Machinery & Equipment in Pakistan',
     images: ['/images/uploads/2023/11/yungsunplasticindustry-logo-2.png'],
   },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
   category: 'Industrial Equipment',
   other: {
     'geo.region': 'PK-PB',
