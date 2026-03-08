@@ -3,6 +3,7 @@ import CompanyInfo from '@/components/about/CompanyInfo'
 import MissionVision from '@/components/about/MissionVision'
 import FeaturesSection from '@/components/home/FeaturesSection'
 import JsonLd, { generateFAQSchema, companyFAQs } from '@/components/seo/JsonLd'
+import Breadcrumbs from '@/components/layout/Breadcrumbs'
 
 export const metadata: Metadata = {
   title: 'About Us - Yungsun Plastic Industry',
@@ -23,13 +24,19 @@ export const dynamic = 'force-static'
 export const revalidate = false
 
 export default function AboutPage() {
+  const breadcrumbs = [
+    { label: 'Home', href: '/' },
+    { label: 'About Us' },
+  ]
+
   return (
     <main className="min-h-screen bg-white">
       <JsonLd data={generateFAQSchema(companyFAQs)} />
       {/* Page Header */}
       <section className="bg-gradient-to-b from-yellow-50 to-white py-16">
         <div className="container-width">
-          <div className="text-center max-w-3xl mx-auto">
+          <Breadcrumbs items={breadcrumbs} />
+          <div className="text-center max-w-3xl mx-auto mt-4">
             <h1 className="text-4xl md:text-5xl font-bold text-zinc-900 mb-4">
               About Yungsun Plastic Industry
             </h1>
@@ -39,7 +46,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      
+
       <CompanyInfo />
       <MissionVision />
       <FeaturesSection />

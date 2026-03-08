@@ -7,19 +7,23 @@ import { memo, useMemo } from 'react'
 
 const CAROUSEL_IMAGES = [
   {
-    src: '/banners/auto-matic-staping-machine-banner-desktop.webp',
+    desktop: '/banners/auto-matic-staping-machine-banner-desktop.webp',
+    mobile: '/banners/automatic-mobile.webp',
     alt: 'Automatic Strapping Machine - Yungsun Plastic Industry',
   },
   {
-    src: '/banners/dunnage-air-bags-desktop.webp',
+    desktop: '/banners/dunnage-air-bags-desktop.webp',
+    mobile: '/banners/dunnage-air-bags-mobile.webp',
     alt: 'Dunnage Air Bags - Yungsun Plastic Industry',
   },
   {
-    src: '/banners/high-quality-plastic-baskets-desktop.webp',
+    desktop: '/banners/high-quality-plastic-baskets-desktop.webp',
+    mobile: '/banners/high-quality-plastic-baskets-mobile.webp',
     alt: 'High Quality Plastic Baskets - Yungsun Plastic Industry',
   },
   {
-    src: '/banners/pallete-wrapping-machine-desktop.webp',
+    desktop: '/banners/pallete-wrapping-machine-desktop.webp',
+    mobile: '/banners/pallete-wrapping-machines-mobile.webp',
     alt: 'Pallet Wrapping Machine - Yungsun Plastic Industry',
   },
 ]
@@ -29,7 +33,7 @@ function HeroCarousel() {
     () => Autoplay({ delay: 5000, stopOnInteraction: false }),
     []
   )
-  
+
   const [emblaRef] = useEmblaCarousel(
     { loop: true, duration: 30 },
     [autoplayPlugin]
@@ -44,15 +48,29 @@ function HeroCarousel() {
               key={index}
               className="embla__slide flex-[0_0_100%] min-w-0"
             >
-              <div className="relative w-full">
+              <div className="relative w-full overflow-hidden">
+                {/* Desktop Image */}
                 <Image
-                  src={image.src}
+                  src={image.desktop}
                   alt={image.alt}
                   width={1920}
                   height={600}
-                  className="w-full h-auto"
+                  className="hidden md:block w-full h-auto object-contain"
                   priority={index === 0}
                   sizes="100vw"
+                  quality={90}
+                />
+
+                {/* Mobile Image */}
+                <Image
+                  src={image.mobile}
+                  alt={image.alt}
+                  width={768}
+                  height={1024}
+                  className="block md:hidden w-full h-auto object-contain"
+                  priority={index === 0}
+                  sizes="100vw"
+                  quality={90}
                 />
               </div>
             </div>

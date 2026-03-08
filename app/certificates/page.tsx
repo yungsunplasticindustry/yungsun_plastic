@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Shield, Download, FileText, Award, CheckCircle } from 'lucide-react'
 import JsonLd, { generateFAQSchema, certificatesFAQs } from '@/components/seo/JsonLd'
+import Breadcrumbs from '@/components/layout/Breadcrumbs'
 
 // Force static generation
 export const dynamic = 'force-static'
@@ -103,13 +104,19 @@ const certificateCategories = [
 ]
 
 export default function CertificatesPage() {
+  const breadcrumbs = [
+    { label: 'Home', href: '/' },
+    { label: 'Certificates & Specifications' },
+  ]
+
   return (
     <main className="min-h-screen bg-white">
       <JsonLd data={generateFAQSchema(certificatesFAQs)} />
       {/* Header Section */}
       <section className="bg-gradient-to-b from-yellow-50 to-white py-16">
         <div className="container-width">
-          <div className="mx-auto max-w-3xl text-center">
+          <Breadcrumbs items={breadcrumbs} />
+          <div className="mx-auto max-w-3xl text-center mt-4">
             <div className="mb-4 inline-flex items-center justify-center rounded-full bg-yellow-100 p-3">
               <Shield className="h-8 w-8 text-yellow-600" />
             </div>

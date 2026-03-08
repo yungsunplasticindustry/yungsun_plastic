@@ -3,6 +3,7 @@ import ContactHeader from '@/components/contact/ContactHeader'
 import ContactInfo from '@/components/contact/ContactInfo'
 import ContactFormWrapper from '@/components/contact/ContactFormWrapper'
 import JsonLd, { generateFAQSchema, contactFAQs } from '@/components/seo/JsonLd'
+import Breadcrumbs from '@/components/layout/Breadcrumbs'
 
 // Force static generation
 export const dynamic = 'force-static'
@@ -22,10 +23,18 @@ export const metadata: Metadata = {
 }
 
 export default function ContactPage() {
+  const breadcrumbs = [
+    { label: 'Home', href: '/' },
+    { label: 'Contact Us' },
+  ]
+
   return (
     <main className="min-h-screen bg-white">
       <JsonLd data={generateFAQSchema(contactFAQs)} />
       <div className="container-width py-16">
+        <div className="mb-8">
+          <Breadcrumbs items={breadcrumbs} />
+        </div>
         <div className="mx-auto max-w-5xl">
           <ContactHeader />
           <div className="grid gap-8 lg:grid-cols-2">

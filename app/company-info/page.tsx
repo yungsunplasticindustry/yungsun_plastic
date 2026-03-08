@@ -60,7 +60,7 @@ export default function CompanyInfoPage() {
       <section className="bg-gradient-to-b from-yellow-50 to-white py-16">
         <div className="container-width">
           <Breadcrumbs items={breadcrumbs} />
-          <div className="text-center max-w-3xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mt-4">
             <h1 className="text-4xl md:text-5xl font-bold text-zinc-900 mb-4">
               About Yungsun Plastic Industry
             </h1>

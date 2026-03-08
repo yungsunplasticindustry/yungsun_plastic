@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Download, FileText, Book, Video, File } from 'lucide-react'
 import JsonLd, { generateFAQSchema, downloadsFAQs } from '@/components/seo/JsonLd'
+import Breadcrumbs from '@/components/layout/Breadcrumbs'
 
 // Force static generation
 export const dynamic = 'force-static'
@@ -166,13 +167,19 @@ const getFileIcon = (fileType: string) => {
 }
 
 export default function DownloadsPage() {
+  const breadcrumbs = [
+    { label: 'Home', href: '/' },
+    { label: 'Downloads & Resources' },
+  ]
+
   return (
     <main className="min-h-screen bg-white">
       <JsonLd data={generateFAQSchema(downloadsFAQs)} />
       {/* Header Section */}
       <section className="bg-gradient-to-b from-yellow-50 to-white py-16">
         <div className="container-width">
-          <div className="mx-auto max-w-3xl text-center">
+          <Breadcrumbs items={breadcrumbs} />
+          <div className="mx-auto max-w-3xl text-center mt-4">
             <div className="mb-4 inline-flex items-center justify-center rounded-full bg-yellow-100 p-3">
               <Download className="h-8 w-8 text-yellow-600" />
             </div>
