@@ -1,15 +1,23 @@
 export const COMPANY_INFO = {
   social: {
-    facebook: '#',
-    twitter: '#',
-    linkedin: '#',
-    youtube: '#',
+    facebook: 'https://www.facebook.com/yungsunplasticindustry',
+    instagram: 'https://www.instagram.com/yungsunplastic_industry',
+    youtube: 'https://www.youtube.com/@YungSunPlasticIndustry',
+    google: 'https://share.google/vsr4NlNwbVvocVuzG',
   },
   mainContact: {
     email: 'info@Yungsunplastic.com',
-    phone: '+92 300 1234567', // Keeping existing main phone for now
+    phone: '+92 300 1234567',
   },
   locations: [
+    {
+      id: 'lahore',
+      city: 'Lahore',
+      title: 'Head Office',
+      address: 'P/100 Lahore Motorway City, Near Kot Abdul Malik, Lahore, Pakistan, 54000',
+      phone: '+92 300 1234567',
+      email: 'info@Yungsunplastic.com',
+    },
     {
       id: 'multan',
       city: 'Multan',
@@ -18,18 +26,12 @@ export const COMPANY_INFO = {
       phone: '061-6241271',
       email: 'sheikhsami9@gmail.com',
     },
-    {
-      id: 'lahore',
-      city: 'Lahore',
-      title: 'Head Office', // Assuming Lahore is Head Office based on Footer
-      address: 'Lahore, Pakistan', // Placeholder until user provides full address
-      phone: '+92 300 1234567',
-      email: 'info@Yungsunplastic.com',
-    }
   ],
   businessHours: {
     weekdays: '9:00 AM - 6:00 PM',
     saturday: '9:00 AM - 2:00 PM',
     sunday: 'Closed',
-  }
+  },
+  googleMapsPlusCode: 'H6QC+CJ Lahore, Pakistan',
+  googleMapsAddress: 'Block P Lahore - Islamabad Mtwy, City, Lahore, 39250, Pakistan',
 }

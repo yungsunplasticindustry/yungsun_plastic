@@ -23,7 +23,10 @@ export const organizationSchema = {
   "description": "Pakistan's leading provider of industrial packaging machinery and equipment",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "P/100 Lahore Motorway City, Near Kot Abdul Malik",
     "addressLocality": "Lahore",
+    "addressRegion": "Punjab",
+    "postalCode": "54000",
     "addressCountry": "PK"
   },
   "contactPoint": {
@@ -35,9 +38,9 @@ export const organizationSchema = {
     "availableLanguage": ["en", "ur"]
   },
   "sameAs": [
-    "https://www.facebook.com/yungsunplastic",
-    "https://www.linkedin.com/company/yungsunplastic",
-    "https://www.youtube.com/@yungsunplastic"
+    "https://www.facebook.com/yungsunplasticindustry",
+    "https://www.instagram.com/yungsunplastic_industry",
+    "https://www.youtube.com/@YungSunPlasticIndustry"
   ]
 }
 
@@ -96,7 +99,7 @@ export const localBusinessSchema = {
   "email": "info@yungsunplastic.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Industrial Area",
+    "streetAddress": "P/100 Lahore Motorway City, Near Kot Abdul Malik",
     "addressLocality": "Lahore",
     "addressRegion": "Punjab",
     "postalCode": "54000",
@@ -166,7 +169,7 @@ export const homepageFAQs = [
   },
   {
     question: "Where is Yungsun Plastic Industry located?",
-    answer: "Yungsun Plastic Industry is located in Lahore, Punjab, Pakistan. We serve customers throughout Pakistan and offer delivery and installation services for all our packaging machinery."
+    answer: "Yungsun Plastic Industry's Head Office is located at P/100 Lahore Motorway City, Near Kot Abdul Malik, Lahore, Pakistan (Postal Code 54000). We also have a Multan office. We serve customers throughout Pakistan and offer delivery and installation services for all our packaging machinery."
   },
   {
     question: "How can I get a quote for packaging equipment?",

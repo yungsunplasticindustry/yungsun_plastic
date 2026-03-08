@@ -23,7 +23,7 @@ export default function ContactInfo() {
                   <Phone className="h-5 w-5 text-zinc-500 mt-0.5" />
                   <a
                     href={`tel:${location.phone}`}
-                    className="text-zinc-600 hover:text-blue-600 transition-colors"
+                    className="text-zinc-600 hover:text-yellow-600 transition-colors"
                   >
                     {location.phone}
                   </a>
@@ -33,7 +33,7 @@ export default function ContactInfo() {
                   <Mail className="h-5 w-5 text-zinc-500 mt-0.5" />
                   <a
                     href={`mailto:${location.email}`}
-                    className="text-zinc-600 hover:text-blue-600 transition-colors"
+                    className="text-zinc-600 hover:text-yellow-600 transition-colors"
                   >
                     {location.email}
                   </a>
