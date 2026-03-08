@@ -46,7 +46,7 @@ const downloadCategories = [
       {
         id: 'sealing-machines-catalog',
         title: 'Carton Sealing Machines Catalog',
-        description: 'RP series automatic and semi-automatic sealers',
+        description: 'YS series automatic and semi-automatic sealers',
         fileType: 'pdf' as const,
         fileSize: '6.2 MB',
         downloadUrl: '#',
@@ -69,8 +69,8 @@ const downloadCategories = [
         category: 'specs',
       },
       {
-        id: 'spec-rp-ma',
-        title: 'RP-MA Carton Sealer Specs',
+        id: 'spec-ys-ma',
+        title: 'YS-MA Carton Sealer Specs',
         description: 'Mini automatic carton sealing machine specifications',
         fileType: 'pdf' as const,
         fileSize: '1.2 MB',
@@ -96,7 +96,7 @@ const downloadCategories = [
       {
         id: 'guide-strapping',
         title: 'Strapping Machine Installation Guide',
-        description: 'Complete setup instructions for RP-101A series',
+        description: 'Complete setup instructions for YS-101A series',
         fileType: 'pdf' as const,
         fileSize: '3.4 MB',
         downloadUrl: '#',
@@ -114,7 +114,7 @@ const downloadCategories = [
       {
         id: 'guide-liquid-filler',
         title: 'Liquid Filling Machine Manual',
-        description: 'RP-1000 series operation and maintenance guide',
+        description: 'YS-1000 series operation and maintenance guide',
         fileType: 'pdf' as const,
         fileSize: '4.1 MB',
         downloadUrl: '#',

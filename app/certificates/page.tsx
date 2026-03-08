@@ -75,11 +75,11 @@ const certificateCategories = [
     description: 'Technical specifications for our machinery range',
     certificates: [
       {
-        id: 'rp-ma',
-        title: 'Carton Sealer RP-MA',
+        id: 'ys-ma',
+        title: 'Carton Sealer YS-MA',
         image: '/images/uploads/2023/11/RP-MA-Mini-Automatic-Carton-Sealer-400x400-1.jpg',
         specs: {
-          model: 'RP-MA',
+          model: 'YS-MA',
           type: 'Mini Automatic',
           speed: '20 cartons/min',
           power: '220V/50Hz',
@@ -87,11 +87,11 @@ const certificateCategories = [
         downloadUrl: '#',
       },
       {
-        id: 'strapping-sp1',
-        title: 'Strapping Machine SP-1',
+        id: 'strapping-ys1',
+        title: 'Strapping Machine YS-1',
         image: '/images/uploads/2023/11/SP-1-400x400-1.jpg',
         specs: {
-          model: 'SP-1',
+          model: 'YS-1',
           type: 'Semi-Automatic',
           strapping: 'PP/PET',
           tension: '60kg',
@@ -174,7 +174,7 @@ export default function CertificatesPage() {
                       <h3 className="mb-2 font-semibold text-zinc-900">
                         {cert.title}
                       </h3>
-                      
+
                       {/* Specifications */}
                       <div className="mb-3 space-y-1">
                         {Object.entries(cert.specs).slice(0, 3).map(([key, value]) => (
