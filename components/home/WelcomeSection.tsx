@@ -10,19 +10,19 @@ export default function WelcomeSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-zinc-900 mb-6">
             Welcome to <span className="text-yellow-500">Yungsun Plastic Industry</span>
           </h2>
-          
+
           {/* Company Description */}
           <p className="text-lg text-zinc-600 mb-8 leading-relaxed">
             ONE SOURCE OF COMPLETE PACKAGING, FILLING & LABELING SOLUTION
           </p>
-          
+
           <div className="prose prose-lg mx-auto text-zinc-600 mb-10">
             <p>
-              At Yungsun Plastic Industry, we are your trusted partner for comprehensive 
-              industrial packaging solutions. We provide cutting-edge machinery and 
-              equipment for businesses across Pakistan and beyond. 
-              Our commitment to quality and innovation makes us the preferred choice for 
-              companies seeking reliable packaging, filling, and labeling solutions.
+              At Yungsun Plastic Industry, we provide comprehensive industrial
+              packaging machines and automation solutions for manufacturing plants
+              across Pakistan. From layout design to turnkey installation,
+              we ensure reliable packaging, automated filling, and labeling.
+              Our commitment involves complete after-sales support and spare parts availability.
             </p>
           </div>
 
@@ -47,8 +47,8 @@ export default function WelcomeSection() {
               <div className="text-sm text-zinc-600 mt-1">Quality Assured</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-yellow-600">500+</div>
-              <div className="text-sm text-zinc-600 mt-1">Happy Clients</div>
+              <div className="text-3xl font-bold text-yellow-600">Plant</div>
+              <div className="text-sm text-zinc-600 mt-1">Installations</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-yellow-600">13</div>

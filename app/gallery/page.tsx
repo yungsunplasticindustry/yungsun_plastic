@@ -124,13 +124,13 @@ export default function GalleryPage() {
                 className="group relative cursor-pointer overflow-hidden rounded-lg border border-zinc-200 bg-white transition-shadow hover:shadow-lg"
                 onClick={() => setSelectedImage(item)}
               >
-                <div className="aspect-square overflow-hidden bg-zinc-50">
+                <div className="aspect-square overflow-hidden bg-white border-b border-zinc-100">
                   <Image
                     src={item.image}
                     alt={item.title}
                     width={400}
                     height={400}
-                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    className="h-full w-full object-contain p-4 transition-transform duration-300 group-hover:scale-110"
                   />
                 </div>
                 <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">

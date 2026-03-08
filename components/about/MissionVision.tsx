@@ -39,7 +39,7 @@ export default function MissionVision() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {values.map((value, index) => (
             <div key={index} className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 text-blue-600 rounded-full mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-50 text-yellow-600 rounded-full mb-4">
                 <value.icon className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold text-zinc-900 mb-3">

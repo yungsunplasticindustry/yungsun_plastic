@@ -68,13 +68,13 @@ export default function Footer() {
 
             {/* Social Media */}
             <div className="flex gap-3 mt-6">
-              <Link href="#" className="w-8 h-8 bg-zinc-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+              <Link href="#" className="w-8 h-8 bg-zinc-700 rounded-full flex items-center justify-center hover:bg-yellow-600 hover:text-white transition-colors">
                 <Facebook className="h-4 w-4" />
               </Link>
-              <Link href="#" className="w-8 h-8 bg-zinc-700 rounded-full flex items-center justify-center hover:bg-blue-400 transition-colors">
+              <Link href="#" className="w-8 h-8 bg-zinc-700 rounded-full flex items-center justify-center hover:bg-yellow-600 hover:text-white transition-colors">
                 <Twitter className="h-4 w-4" />
               </Link>
-              <Link href="#" className="w-8 h-8 bg-zinc-700 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+              <Link href="#" className="w-8 h-8 bg-zinc-700 rounded-full flex items-center justify-center hover:bg-yellow-600 hover:text-white transition-colors">
                 <Linkedin className="h-4 w-4" />
               </Link>
               <Link href="#" className="w-8 h-8 bg-zinc-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">

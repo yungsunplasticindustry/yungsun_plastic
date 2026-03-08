@@ -8,7 +8,6 @@ import SolutionsBanner from '@/components/home/SolutionsBanner'
 import TestimonialsSection from '@/components/home/TestimonialsSection'
 import PartnersSection from '@/components/home/PartnersSection'
 import TaglineStrip from '@/components/home/TaglineStrip'
-import VideoSection from '@/components/home/VideoSection'
 import FeaturesSection from '@/components/home/FeaturesSection'
 import JsonLd, { generateFAQSchema, homepageFAQs } from '@/components/seo/JsonLd'
 
@@ -46,7 +45,6 @@ export default function HomePage() {
       <TestimonialsSection />
       <FeaturesSection />
       <PartnersSection />
-      <VideoSection />
     </main>
   )
 }

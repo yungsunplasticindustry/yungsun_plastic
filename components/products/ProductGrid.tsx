@@ -7,9 +7,9 @@ interface ProductGridProps {
   showCategoryLink?: boolean
 }
 
-export default function ProductGrid({ 
-  products, 
-  showCategoryLink = true 
+export default function ProductGrid({
+  products,
+  showCategoryLink = true
 }: ProductGridProps) {
   if (products.length === 0) {
     return (
@@ -33,13 +33,13 @@ export default function ProductGrid({
               href={`/products/${product.category}/${product.slug}`}
               className="group overflow-hidden rounded-lg border border-zinc-200 bg-white transition-shadow hover:shadow-lg"
             >
-              <div className="relative aspect-square overflow-hidden bg-zinc-100">
+              <div className="relative aspect-square overflow-hidden bg-white border-b border-zinc-100">
                 <Image
                   src={product.images[0]}
                   alt={product.name}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="object-cover transition-transform group-hover:scale-105"
+                  className="object-contain p-4 transition-transform group-hover:scale-105"
                 />
                 {product.featured && (
                   <span className="absolute right-2 top-2 rounded-full bg-zinc-900 px-3 py-1 text-xs font-medium text-white">

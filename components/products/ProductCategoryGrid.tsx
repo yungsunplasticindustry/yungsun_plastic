@@ -13,12 +13,12 @@ export default function ProductCategoryGrid() {
           href={`/products/${category.slug}`}
           className="group cursor-pointer rounded-lg border border-zinc-200 bg-white transition-all hover:border-zinc-300 hover:shadow-lg overflow-hidden"
         >
-          <div className="relative h-48 bg-zinc-100">
+          <div className="relative h-48 bg-white border-b border-zinc-100">
             <Image
               src={category.image}
               alt={category.name}
               fill
-              className="object-cover transition-transform group-hover:scale-105"
+              className="object-contain p-4 transition-transform group-hover:scale-105"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
           </div>

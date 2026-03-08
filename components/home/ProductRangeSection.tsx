@@ -15,7 +15,7 @@ export default function ProductRangeSection() {
             Our Product Range
           </h2>
           <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
-            Comprehensive packaging solutions for every industry need
+            Comprehensive industrial packaging machines & materials for food, textile, and manufacturing sectors.
           </p>
         </div>
 
@@ -26,8 +26,8 @@ export default function ProductRangeSection() {
               href={`/products/${category.slug}`}
               className="group text-center"
             >
-              <div className="bg-gradient-to-br from-blue-50 to-white rounded-lg p-6 border border-zinc-200 hover:shadow-lg transition-all duration-300 hover:scale-105">
-                <div className="relative h-32 w-32 mx-auto mb-4 overflow-hidden rounded-lg bg-white">
+              <div className="bg-gradient-to-br from-yellow-50 to-white rounded-lg p-6 border border-zinc-200 hover:shadow-lg hover:border-yellow-200 transition-all duration-300 hover:scale-105">
+                <div className="relative h-32 w-32 mx-auto mb-4 overflow-hidden rounded-lg bg-white border border-zinc-100">
                   <Image
                     src={category.image}
                     alt={category.name}
@@ -36,7 +36,7 @@ export default function ProductRangeSection() {
                     sizes="128px"
                   />
                 </div>
-                <h3 className="font-semibold text-zinc-900 group-hover:text-blue-600 transition-colors">
+                <h3 className="font-semibold text-zinc-900 group-hover:text-yellow-600 transition-colors">
                   {category.name}
                 </h3>
                 <p className="text-xs text-zinc-600 mt-1 line-clamp-2">
@@ -50,7 +50,7 @@ export default function ProductRangeSection() {
         <div className="text-center mt-10">
           <Link
             href="/products"
-            className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium"
+            className="inline-flex items-center gap-2 text-yellow-600 hover:text-yellow-700 font-medium transition-colors"
           >
             View All Categories
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

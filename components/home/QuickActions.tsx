@@ -8,8 +8,8 @@ export default function QuickActions() {
       title: 'Browse Products',
       description: 'Explore our complete catalog',
       href: '/products',
-      bgColor: 'bg-blue-600',
-      hoverColor: 'hover:bg-blue-700',
+      bgColor: 'bg-yellow-600',
+      hoverColor: 'hover:bg-yellow-700',
     },
     {
       icon: MessageSquare,

@@ -24,12 +24,12 @@ export default function LatestProductsSection() {
           {latestProducts.map((product) => (
             <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
               <Link href={`/products/${product.category}/${product.slug}`}>
-                <div className="relative h-48 bg-zinc-100">
+                <div className="relative h-48 bg-white border-b border-zinc-100">
                   <Image
                     src={product.images[0]}
                     alt={product.name}
                     fill
-                    className="object-cover hover:scale-105 transition-transform duration-300"
+                    className="object-contain p-4 hover:scale-105 transition-transform duration-300"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                   {product.featured && (

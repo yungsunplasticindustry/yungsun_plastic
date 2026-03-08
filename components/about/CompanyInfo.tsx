@@ -38,19 +38,19 @@ export default function CompanyInfo() {
 
             <div className="grid grid-cols-2 gap-6 mt-8">
               <div>
-                <div className="text-3xl font-bold text-blue-600">100%</div>
+                <div className="text-3xl font-bold text-yellow-600">100%</div>
                 <div className="text-sm text-zinc-600 mt-1">Quality Assured</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600">500+</div>
+                <div className="text-3xl font-bold text-yellow-600">500+</div>
                 <div className="text-sm text-zinc-600 mt-1">Satisfied Clients</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600">13</div>
+                <div className="text-3xl font-bold text-yellow-600">13</div>
                 <div className="text-sm text-zinc-600 mt-1">Product Categories</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600">100%</div>
+                <div className="text-3xl font-bold text-yellow-600">100%</div>
                 <div className="text-sm text-zinc-600 mt-1">Quality Guarantee</div>
               </div>
             </div>
@@ -67,11 +67,11 @@ export default function CompanyInfo() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-blue-600 text-white p-6 rounded-lg max-w-xs">
-              <p className="font-semibold">
+            <div className="absolute -bottom-6 -left-6 bg-yellow-500 text-zinc-900 p-6 rounded-lg max-w-xs shadow-lg">
+              <p className="font-semibold text-lg">
                 &quot;Quality is not an act, it is a habit&quot;
               </p>
-              <p className="text-sm mt-2 text-blue-100">- Our Philosophy</p>
+              <p className="text-sm mt-2 text-zinc-700 font-medium">- Our Philosophy</p>
             </div>
           </div>
         </div>

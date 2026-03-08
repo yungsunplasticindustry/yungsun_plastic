@@ -159,7 +159,7 @@ export default function CertificatesPage() {
                     className="group overflow-hidden rounded-lg border border-zinc-200 bg-white transition-all hover:shadow-lg"
                   >
                     {/* Certificate Image */}
-                    <div className="relative aspect-square overflow-hidden bg-zinc-50">
+                    <div className="relative aspect-square overflow-hidden bg-white border-b border-zinc-100">
                       {!cert.image ? (
                         <div className="flex h-full items-center justify-center">
                           <Award className="h-16 w-16 text-zinc-300" />
@@ -168,9 +168,8 @@ export default function CertificatesPage() {
                         <Image
                           src={cert.image}
                           alt={cert.title}
-                          width={400}
-                          height={400}
-                          className="object-cover transition-transform group-hover:scale-105"
+                          fill
+                          className="object-contain p-4 transition-transform group-hover:scale-105"
                         />
                       )}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />

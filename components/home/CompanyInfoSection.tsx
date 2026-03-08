@@ -6,8 +6,8 @@ import Button from '@/components/ui/Button'
 export default function CompanyInfoSection() {
   const features = [
     { icon: Award, text: "Commitment to Excellence" },
-    { icon: Users, text: "500+ Satisfied Clients" },
-    { icon: Globe, text: "Nationwide Service Network" },
+    { icon: Users, text: "500+ Turnkey Installations" },
+    { icon: Globe, text: "Nationwide Spare Parts & Service" },
     { icon: CheckCircle, text: "ISO Certified Quality" }
   ]
 
@@ -23,15 +23,15 @@ export default function CompanyInfoSection() {
             <div className="prose prose-lg text-zinc-600 mb-8">
               <p>
                 Yungsun Plastic Industry is at the forefront of providing cutting-edge
-                packaging machinery and equipment to businesses across Pakistan.
-                Our commitment to quality, innovation, and customer satisfaction has made us
-                the preferred partner for companies seeking reliable packaging solutions.
+                packaging machinery, materials, and complete turnkey plant solutions to businesses
+                across Pakistan. Our commitment to quality, innovation, and dedicated after-sales support
+                has made us the preferred partner for companies seeking reliable operations.
               </p>
               <p className="mt-4">
                 We specialize in a comprehensive range of industrial packaging equipment,
-                from carton sealers and strapping machines to conveyor systems and liquid
-                packaging solutions. Every product in our catalog is carefully selected to
-                meet the highest standards of performance and durability.
+                from carton sealers, strapping machines, and robotic conveyors to
+                liquid and powder packaging systems. Serving food, dairy, cosmetics, and
+                pharmaceutical sectors, we guarantee performance, PLC automation, and durability.
               </p>
             </div>
 
