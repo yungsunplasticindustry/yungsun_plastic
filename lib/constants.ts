@@ -7,7 +7,7 @@ export const COMPANY_INFO = {
   },
   mainContact: {
     email: 'info@Yungsunplastic.com',
-    phone: '+92 300 1234567',
+    phone: '+92 300 0307013',
   },
   locations: [
     {
@@ -15,7 +15,7 @@ export const COMPANY_INFO = {
       city: 'Lahore',
       title: 'Head Office',
       address: 'P/100 Lahore Motorway City, Near Kot Abdul Malik, Lahore, Pakistan, 54000',
-      phone: '+92 300 1234567',
+      phone: '+92 300 0307013',
       email: 'info@Yungsunplastic.com',
     },
     {
@@ -23,8 +23,8 @@ export const COMPANY_INFO = {
       city: 'Multan',
       title: 'Multan Office',
       address: 'Office No.96 Gulistan-e-Ashar Bahawalpur Road, Umar-e-Farooq Chowk Multan-Pakistan',
-      phone: '061-6241271',
-      email: 'sheikhsami9@gmail.com',
+      phone: '+92 300 0307013',
+      email: 'info@Yungsunplastic.com',
     },
   ],
   businessHours: {

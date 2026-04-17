@@ -31,7 +31,7 @@ export const organizationSchema = {
   },
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+92-300-1234567",
+    "telephone": "+92-300-0307013",
     "contactType": "sales",
     "email": "info@yungsunplastic.com",
     "areaServed": "PK",
@@ -95,7 +95,7 @@ export const localBusinessSchema = {
   "name": "Yungsun Plastic Industry",
   "image": "https://yungsunplastic.com/images/uploads/2023/11/yungsunplasticindustry-logo-2.webp",
   "url": "https://yungsunplastic.com",
-  "telephone": "+92-300-1234567",
+  "telephone": "+92-300-0307013",
   "email": "info@yungsunplastic.com",
   "address": {
     "@type": "PostalAddress",

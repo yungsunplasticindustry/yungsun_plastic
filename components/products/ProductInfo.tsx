@@ -19,7 +19,7 @@ export default function ProductInfo({ product, category }: ProductInfoProps) {
     const message = encodeURIComponent(
       `Hello! I'm interested in ${product.name}. \n\nProduct: ${product.name}\nCategory: ${category.name}\nURL: ${window.location.href}\n\nPlease provide more information and pricing.`
     )
-    const phoneNumber = '923001234567' // Pakistan number without +
+    const phoneNumber = '923000307013' // Pakistan number without +
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank')
   }
 

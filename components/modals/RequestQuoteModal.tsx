@@ -134,7 +134,7 @@ export default function RequestQuoteModal({ isOpen, onClose, productName }: Requ
               {...register('phone')}
               type="tel"
               className="w-full rounded-md border border-zinc-300 px-3 py-2 text-sm focus:border-yellow-400 focus:outline-none focus:ring-1 focus:ring-yellow-400"
-              placeholder="+92 300 1234567"
+              placeholder="+92 300 0307013"
             />
             {errors.phone && (
               <p className="mt-1 text-xs text-red-600">{errors.phone.message}</p>
