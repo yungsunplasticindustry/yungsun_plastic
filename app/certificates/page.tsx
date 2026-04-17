@@ -78,7 +78,7 @@ const certificateCategories = [
       {
         id: 'ys-ma',
         title: 'Carton Sealer YS-MA',
-        image: '/images/uploads/2023/11/RP-MA-Mini-Automatic-Carton-Sealer-400x400-1.webp',
+        image: '/images/uploads/2023/11/YS-MA-Mini-Automatic-Carton-Sealer.webp',
         specs: {
           model: 'YS-MA',
           type: 'Mini Automatic',
@@ -90,7 +90,7 @@ const certificateCategories = [
       {
         id: 'strapping-ys1',
         title: 'Strapping Machine YS-1',
-        image: '/images/uploads/2023/11/SP-1-400x400-1.webp',
+        image: '/images/uploads/2023/11/YS-1-Strapping-Machine.webp',
         specs: {
           model: 'YS-1',
           type: 'Semi-Automatic',

@@ -15,17 +15,17 @@ const categories = [
 
 const galleryItems = [
   // Machinery
-  { id: 1, title: 'Mini Automatic Carton Sealer', category: 'machines', image: '/images/uploads/2023/11/RP-MA-Mini-Automatic-Carton-Sealer-400x400-1.webp' },
-  { id: 2, title: 'Automatic Carton Sealer RP-1A', category: 'machines', image: '/images/uploads/2023/11/RP-1A-With-Guide-Automatic-Carton-Sealer-400x400-1.webp' },
-  { id: 3, title: 'Automatic Carton Sealer RP-1D', category: 'machines', image: '/images/uploads/2023/11/RP-1D-Automatic-Carton-Sealer-400x400-1.webp' },
-  { id: 4, title: 'Automatic Carton Sealer RP-3A', category: 'machines', image: '/images/uploads/2023/11/RP-3A-Automatic-Carton-Sealer-400x400-1.webp' },
-  { id: 5, title: 'Strapping Machine SP-1', category: 'machines', image: '/images/uploads/2023/11/SP-1-400x400-1.webp' },
-  { id: 6, title: 'Strapping Machine SP-4', category: 'machines', image: '/images/uploads/2023/11/SP-4-400x400-1.webp' },
-  { id: 7, title: 'Roller Conveyor System', category: 'machines', image: '/images/uploads/2023/11/Roller-Conveyors-400x400-1.webp' },
-  { id: 8, title: 'Automatic Liquid Packaging Machine', category: 'machines', image: '/images/uploads/2023/11/RP-1000-Automatic-Liquid-Packaging-Machine-400x400-1.webp' },
-  { id: 9, title: 'L-Bar Shrink Wrapping Machine', category: 'machines', image: '/images/uploads/2023/11/L-Bar-Shrink-Wrapping-Machine-400x400-1.webp' },
-  { id: 10, title: 'Shrink Wrapper Machine 5040B', category: 'machines', image: '/images/uploads/2023/11/5040B-Shrink-wrapper-machine-400x400-1.webp' },
-  { id: 11, title: 'Strapping Machine RPZ28', category: 'machines', image: '/images/uploads/2023/11/Model-RPZ28-400x400-1.webp' },
+  { id: 1, title: 'Mini Automatic Carton Sealer', category: 'machines', image: '/images/uploads/2023/11/YS-MA-Mini-Automatic-Carton-Sealer.webp' },
+  { id: 2, title: 'Automatic Carton Sealer RP-1A', category: 'machines', image: '/images/uploads/2023/11/YS-1D-Automatic-Carton-Sealer.webp' },
+  { id: 3, title: 'Automatic Carton Sealer RP-1D', category: 'machines', image: '/images/uploads/2023/11/YS-1D-Automatic-Carton-Sealer.webp' },
+  { id: 4, title: 'Automatic Carton Sealer RP-3A', category: 'machines', image: '/images/uploads/2023/11/YS-3A-Automatic-Carton-Sealer.webp' },
+  { id: 5, title: 'Strapping Machine SP-1', category: 'machines', image: '/images/uploads/2023/11/YS-1-Strapping-Machine.webp' },
+  { id: 6, title: 'Strapping Machine SP-4', category: 'machines', image: '/images/uploads/2023/11/YS-4-Strapping-Machine.webp' },
+  { id: 7, title: 'Roller Conveyor System', category: 'machines', image: '/images/uploads/2023/11/Roller-Conveyor-System.webp' },
+  { id: 8, title: 'Automatic Liquid Packaging Machine', category: 'machines', image: '/images/uploads/2023/11/Fully-Automatic-Strapping-Machine.webp' },
+  { id: 9, title: 'L-Bar Shrink Wrapping Machine', category: 'machines', image: '/images/uploads/2023/11/L-Bar-Shrink-Wrapping-Machine.webp' },
+  { id: 10, title: 'Shrink Wrapper Machine 5040B', category: 'machines', image: '/images/uploads/2023/11/YS-5040B-Shrink-Wrapper-Machine.webp' },
+  { id: 11, title: 'Strapping Machine RPZ28', category: 'machines', image: '/images/uploads/2023/11/Model-YSZ28-Pallet-Wrapping-Machine.webp' },
   { id: 12, title: 'Pallet Wrapping Machine 11504S', category: 'machines', image: '/images/uploads/2023/11/11504S-400x400-1.webp' },
   // Materials
   { id: 13, title: 'Stretch Film Handy Rolls', category: 'materials', image: '/images/uploads/2023/11/Stretch-Film-Handy-Rolls-400x400-1.webp' },

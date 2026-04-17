@@ -11,14 +11,14 @@
     "name": "Carton Sealer Machine",
     "slug": "carton-sealer-machine",
     "description": "Automatic and semi-automatic carton sealing machines for efficient packaging",
-    "image": "/images/uploads/2023/11/RP-MA-Mini-Automatic-Carton-Sealer-400x400-1.webp"
+    "image": "/images/uploads/2023/11/YS-MA-Mini-Automatic-Carton-Sealer.webp"
   },
   {
     "id": "104",
     "name": "Conveyor",
     "slug": "conveyor",
     "description": "Industrial conveyor systems for material handling and production lines",
-    "image": "/images/uploads/2023/11/Roller-Conveyors-400x400-1.webp"
+    "image": "/images/uploads/2023/11/Roller-Conveyor-System.webp"
   },
   {
     "id": "106",
@@ -32,7 +32,7 @@
     "name": "Pallete Wrapping Machine",
     "slug": "pallete-wrapping-machine",
     "description": "Automated pallet wrapping machines for efficient warehouse operations",
-    "image": "/images/uploads/2023/11/Model-RPZ28-400x400-1.webp"
+    "image": "/images/uploads/2023/11/Model-YSZ28-Pallet-Wrapping-Machine.webp"
   },
   {
     "id": "108",
@@ -53,7 +53,7 @@
     "name": "POF Shrink / PE Machine",
     "slug": "pof-shrink",
     "description": "POF shrink film, PE machines, and wrapping solutions",
-    "image": "/images/uploads/2023/11/5040B-Shrink-wrapper-machine-400x400-1.webp"
+    "image": "/images/uploads/2023/11/YS-5040B-Shrink-Wrapper-Machine.webp"
   },
   {
     "id": "111",
@@ -67,14 +67,14 @@
     "name": "Shrink Turner Sealer Machine",
     "slug": "shrink-turner-sealer-machine",
     "description": "Shrink tunnel and sealing machines for packaging",
-    "image": "/images/uploads/2023/11/L-Bar-Shrink-Wrapping-Machine-400x400-1.webp"
+    "image": "/images/uploads/2023/11/L-Bar-Shrink-Wrapping-Machine.webp"
   },
   {
     "id": "113",
     "name": "Strapping Machine",
     "slug": "strapping-machine",
     "description": "Automatic strapping machines for heavy-duty applications",
-    "image": "/images/uploads/2023/11/SP-1-400x400-1.webp"
+    "image": "/images/uploads/2023/11/YS-1-Strapping-Machine.webp"
   },
   {
     "id": "114",
