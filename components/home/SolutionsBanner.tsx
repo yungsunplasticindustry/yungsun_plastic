@@ -13,7 +13,7 @@ export default function SolutionsBanner() {
     <section
       className="relative py-20 md:py-28 bg-cover bg-center bg-fixed"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('/images/uploads/2023/11/H-banner-3-min.jpg')`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('/images/uploads/2023/11/H-banner-3-min.webp')`,
       }}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">

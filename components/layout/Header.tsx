@@ -44,7 +44,7 @@ function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/images/uploads/2023/11/yungsunplasticindustry-logo-2.png"
+            src="/images/uploads/2023/11/yungsunplasticindustry-logo-2.webp"
             alt="Yungsun Plastic Industry"
             width={180}
             height={60}

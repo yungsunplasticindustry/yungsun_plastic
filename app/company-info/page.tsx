@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About Yungsun Plastic Industry',
     description: 'Your trusted partner for industrial packaging solutions in Pakistan',
-    images: ['/images/uploads/2023/11/H-banner-2-min.jpg'],
+    images: ['/images/uploads/2023/11/H-banner-2-min.webp'],
     url: 'https://yungsunplastic.com/company-info/',
   },
 }
@@ -103,7 +103,7 @@ export default function CompanyInfoPage() {
             </div>
             <div className="relative h-[500px] rounded-lg overflow-hidden">
               <Image
-                src="/images/uploads/2023/11/H-banner-2-min.jpg"
+                src="/images/uploads/2023/11/H-banner-2-min.webp"
                 alt="Yungsun Facility"
                 fill
                 className="object-cover"

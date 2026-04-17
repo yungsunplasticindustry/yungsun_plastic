@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Products - Yungsun Plastic Industry',
     description: 'Complete industrial packaging solutions for your business',
-    images: ['/images/uploads/2023/11/H-banner-1-min.jpg'],
+    images: ['/images/uploads/2023/11/H-banner-1-min.webp'],
     url: 'https://yungsunplastic.com/products/',
   },
 }

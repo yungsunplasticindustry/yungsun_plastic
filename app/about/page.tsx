@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About Us - Yungsun Plastic Industry',
     description: 'Pakistan\'s leading packaging machinery and materials company',
-    images: ['/images/uploads/2023/11/H-banner-2-min.jpg'],
+    images: ['/images/uploads/2023/11/H-banner-2-min.webp'],
     url: 'https://yungsunplastic.com/about/',
   },
 }

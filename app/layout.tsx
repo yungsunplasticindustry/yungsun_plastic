@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     siteName: "Yungsun Plastic Industry",
     images: [
       {
-        url: '/images/uploads/2023/11/yungsunplasticindustry-logo-2.png',
+        url: '/images/uploads/2023/11/yungsunplasticindustry-logo-2.webp',
         width: 400,
         height: 150,
         alt: 'Yungsun Plastic Industry Logo',
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Yungsun Plastic Industry',
     description: 'Industrial Packaging Machinery & Equipment in Pakistan',
-    images: ['/images/uploads/2023/11/yungsunplasticindustry-logo-2.png'],
+    images: ['/images/uploads/2023/11/yungsunplasticindustry-logo-2.webp'],
   },
   icons: {
     icon: '/favicon.ico',

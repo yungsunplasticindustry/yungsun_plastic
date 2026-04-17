@@ -19,7 +19,7 @@ export const organizationSchema = {
   "@type": "Organization",
   "name": "Yungsun Plastic Industry",
   "url": "https://yungsunplastic.com",
-  "logo": "https://yungsunplastic.com/images/uploads/2023/11/yungsunplasticindustry-logo-2.png",
+  "logo": "https://yungsunplastic.com/images/uploads/2023/11/yungsunplasticindustry-logo-2.webp",
   "description": "Pakistan's leading provider of industrial packaging machinery and equipment",
   "address": {
     "@type": "PostalAddress",
@@ -93,7 +93,7 @@ export const localBusinessSchema = {
   "@type": "LocalBusiness",
   "@id": "https://yungsunplastic.com/#localbusiness",
   "name": "Yungsun Plastic Industry",
-  "image": "https://yungsunplastic.com/images/uploads/2023/11/yungsunplasticindustry-logo-2.png",
+  "image": "https://yungsunplastic.com/images/uploads/2023/11/yungsunplasticindustry-logo-2.webp",
   "url": "https://yungsunplastic.com",
   "telephone": "+92-300-1234567",
   "email": "info@yungsunplastic.com",

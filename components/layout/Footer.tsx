@@ -56,7 +56,7 @@ export default function Footer() {
             <div className="mb-5">
               <div className="bg-white rounded-lg p-2.5 inline-block">
                 <Image
-                  src="/images/uploads/2023/11/yungsunplasticindustry-logo-2.png"
+                  src="/images/uploads/2023/11/yungsunplasticindustry-logo-2.webp"
                   alt="Yungsun Plastic Industry"
                   width={140}
                   height={48}

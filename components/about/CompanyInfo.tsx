@@ -60,7 +60,7 @@ export default function CompanyInfo() {
           <div className="relative">
             <div className="relative h-[500px] rounded-lg overflow-hidden bg-zinc-100">
               <Image
-                src="/images/uploads/2023/11/H-banner-2-min.jpg"
+                src="/images/uploads/2023/11/H-banner-2-min.webp"
                 alt="Yungsun Factory"
                 fill
                 className="object-cover"

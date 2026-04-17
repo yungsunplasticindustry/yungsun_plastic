@@ -28,7 +28,7 @@ const certificateCategories = [
       {
         id: 'k1',
         title: 'Plastic Basket K1',
-        image: '/images/uploads/2023/11/1-SPECIFICATION-SHEET-OF-PLASTIC-BASKETSK1-400x400-1.jpg',
+        image: '/images/uploads/2023/11/1-SPECIFICATION-SHEET-OF-PLASTIC-BASKETSK1-400x400-1.webp',
         specs: {
           model: 'K1',
           dimensions: '400x400mm',
@@ -40,7 +40,7 @@ const certificateCategories = [
       {
         id: 'k2',
         title: 'Plastic Basket K2',
-        image: '/images/uploads/2023/11/2-SPECIFICATION-SHEET-OF-PLASTIC-BASKETSK2-600x600-1.jpg',
+        image: '/images/uploads/2023/11/2-SPECIFICATION-SHEET-OF-PLASTIC-BASKETSK2-600x600-1.webp',
         specs: {
           model: 'K2',
           dimensions: '450x450mm',
@@ -78,7 +78,7 @@ const certificateCategories = [
       {
         id: 'ys-ma',
         title: 'Carton Sealer YS-MA',
-        image: '/images/uploads/2023/11/RP-MA-Mini-Automatic-Carton-Sealer-400x400-1.jpg',
+        image: '/images/uploads/2023/11/RP-MA-Mini-Automatic-Carton-Sealer-400x400-1.webp',
         specs: {
           model: 'YS-MA',
           type: 'Mini Automatic',
@@ -90,7 +90,7 @@ const certificateCategories = [
       {
         id: 'strapping-ys1',
         title: 'Strapping Machine YS-1',
-        image: '/images/uploads/2023/11/SP-1-400x400-1.jpg',
+        image: '/images/uploads/2023/11/SP-1-400x400-1.webp',
         specs: {
           model: 'YS-1',
           type: 'Semi-Automatic',
