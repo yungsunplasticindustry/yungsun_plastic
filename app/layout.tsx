@@ -5,6 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import HeaderWrapper from "@/components/layout/HeaderWrapper";
 import Footer from "@/components/layout/Footer";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import { QuoteProvider } from "@/providers/QuoteProvider";
 import JsonLd, { organizationSchema, localBusinessSchema, websiteSchema } from "@/components/seo/JsonLd";
 
@@ -114,6 +115,7 @@ export default function RootLayout({
           <HeaderWrapper />
           <main className="min-h-screen ">{children}</main>
           <Footer />
+          <WhatsAppButton />
         </QuoteProvider>
         <Analytics />
         <SpeedInsights />
